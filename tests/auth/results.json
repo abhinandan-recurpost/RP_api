@@ -1,0 +1,101 @@
+[
+  {
+    "id": "TC-AUTH-001",
+    "endpoint": "/api/user_login",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "valid credentials",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "user_info": {
+        "id": "yFwdgp/x4CeZtH1oue1CLw==",
+        "name": "Abhinandan Tiwari",
+        "email": "abhinandan@recurrpost.com"
+      },
+      "token": "eebb3910ae8000cb800ce665bd2ae611c9c56d451e11fa0e83122c86f8c9535b",
+      "expires_at": "2026-11-27T09:12:29Z",
+      "expires_in": 3600
+    }
+  },
+  {
+    "id": "TC-AUTH-002",
+    "endpoint": "/api/user_login",
+    "status": 401,
+    "expected": 401,
+    "pass": true,
+    "note": "wrong api key",
+    "response": {
+      "status": 401,
+      "error": "We could not authenticate the user's RecurPost credentials.",
+      "code": "invalid_credentials"
+    }
+  },
+  {
+    "id": "TC-AUTH-003",
+    "endpoint": "/api/user_login",
+    "status": 401,
+    "expected": 401,
+    "pass": true,
+    "note": "missing emailid",
+    "response": {
+      "status": 401,
+      "error": "emailid and api_key are required.",
+      "code": "credentials_required"
+    }
+  },
+  {
+    "id": "TC-AUTH-004",
+    "endpoint": "/api/user_login",
+    "status": 401,
+    "expected": 401,
+    "pass": true,
+    "note": "missing api_key",
+    "response": {
+      "status": 401,
+      "error": "emailid and api_key are required.",
+      "code": "credentials_required"
+    }
+  },
+  {
+    "id": "TC-AUTH-007",
+    "endpoint": "/api/user_login",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "pass_key alias",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "user_info": {
+        "id": "yFwdgp/x4CeZtH1oue1CLw==",
+        "name": "Abhinandan Tiwari",
+        "email": "abhinandan@recurrpost.com"
+      },
+      "token": "bb51a967166c0e4b186898c9642b3c3c2e695fa3a0c7491a46cd59d92ad53f6c",
+      "expires_at": "2026-11-27T09:12:32Z",
+      "expires_in": 3600
+    }
+  },
+  {
+    "id": "TC-AUTH-008",
+    "endpoint": "/api/user_login",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "zapier_key alias",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "user_info": {
+        "id": "yFwdgp/x4CeZtH1oue1CLw==",
+        "name": "Abhinandan Tiwari",
+        "email": "abhinandan@recurrpost.com"
+      },
+      "token": "f7f1004e6e56457dcdd908583b9d6e2e3d1f78023f26db7a72c2f3de8641bb36",
+      "expires_at": "2026-11-27T09:12:32Z",
+      "expires_in": 3600
+    }
+  }
+]

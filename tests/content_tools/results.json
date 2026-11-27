@@ -1,0 +1,62 @@
+[
+  {
+    "id": "TC-CT-001",
+    "endpoint": "/api/click_tracking",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "click tracking",
+    "response": {
+      "status": 400,
+      "error": "account_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-CT-002",
+    "endpoint": "/api/shorten_url",
+    "status": 409,
+    "expected": 200,
+    "pass": false,
+    "note": "shorten url",
+    "response": {
+      "status": 409,
+      "error": "No URL shortener account is attached to your account; attach one under Settings.",
+      "code": "conflict"
+    }
+  },
+  {
+    "id": "TC-CT-003",
+    "endpoint": "/api/url_preview",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "url preview",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "preview": {
+        "url": "https://example.com",
+        "host": "example.com",
+        "title": "Example Domain",
+        "description": "",
+        "image_url": "",
+        "images": [],
+        "found": true
+      }
+    }
+  },
+  {
+    "id": "TC-CT-004",
+    "endpoint": "/api/instagram_locations",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "instagram locations",
+    "response": {
+      "status": 400,
+      "error": "search_text is required.",
+      "code": "missing_param"
+    }
+  }
+]

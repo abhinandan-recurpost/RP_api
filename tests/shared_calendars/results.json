@@ -1,0 +1,52 @@
+[
+  {
+    "id": "TC-SC-001",
+    "endpoint": "/api/shared_calendar_get",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "shared calendar get",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "calendar": {
+        "id": "ZOb1Pooy/lq4fZbYfAcJZg==",
+        "name": "test",
+        "url": "https://apptest.recurpost.com/calendar/d56v59zo3i",
+        "start_date": "2026-10-09",
+        "end_date": "",
+        "never_expires": true,
+        "has_pin": false,
+        "link_enabled": true,
+        "created_at": "2026-10-09 08:48:26",
+        "inherited": false
+      }
+    }
+  },
+  {
+    "id": "TC-SC-002",
+    "endpoint": "/api/shared_calendar_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "shared calendar create",
+    "response": {
+      "status": 400,
+      "error": "start_date is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-SC-005",
+    "endpoint": "/api/shared_calendar_delete",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "shared calendar delete",
+    "response": {
+      "status": 400,
+      "error": "Send confirm=true to delete the client calendar with its clients and comments.",
+      "code": "confirm_required"
+    }
+  }
+]

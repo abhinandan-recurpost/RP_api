@@ -1,0 +1,89 @@
+[
+  {
+    "id": "TC-LIB-001",
+    "endpoint": "/api/library_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "library list",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "library_list": [
+        {
+          "cd_id": "V1Frd8ABtM2D+Chwc5iQnA==",
+          "cd_name": "bsky posting"
+        },
+        {
+          "cd_id": "QTO6SY15Ki9Heoqn3otNRQ==",
+          "cd_name": "faces"
+        },
+        {
+          "cd_id": "CiSQYpwzyP5hOmrj784AsQ==",
+          "cd_name": "PR3627 Fix Verify"
+        },
+        {
+          "cd_id": "N8OYuJasZHVVT073V8kT8w==",
+          "cd_name": "Recurring Library"
+        },
+        {
+          "cd_id": "fo+B6sGztjZQ6MC/M4zxgA==",
+          "cd_name": "Testing Video"
+        }
+      ]
+    }
+  },
+  {
+    "id": "TC-LIB-003",
+    "endpoint": "/api/library_create",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "library create valid",
+    "response": {
+      "status": 200,
+      "message": "Library created successfully",
+      "library": {
+        "id": "4MeU+c1VYwluOdv/YFuXTg==",
+        "name": "Test Library",
+        "color": "#e0e0e0",
+        "status": "active",
+        "one_time_use": false,
+        "seasonal": null,
+        "counts": {
+          "posts": 0,
+          "drafts": 0,
+          "variations": 0,
+          "unpublished_posts": 0
+        },
+        "created_at": "2026-11-27 08:13:19"
+      }
+    }
+  },
+  {
+    "id": "TC-LIB-008",
+    "endpoint": "/api/library_content_list",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "library content list",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-LIB-018",
+    "endpoint": "/api/library_delete",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "library delete",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  }
+]

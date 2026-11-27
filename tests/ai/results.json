@@ -1,0 +1,65 @@
+[
+  {
+    "id": "TC-AI-001",
+    "endpoint": "/api/ai_credits",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "ai credits",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "ai_posts": {
+        "total": 20,
+        "used": 5,
+        "remaining": 15,
+        "add_on": false,
+        "resets": "never"
+      },
+      "ai_images": {
+        "total": 10,
+        "used": 8,
+        "remaining": 2,
+        "add_on": false,
+        "resets": "never"
+      }
+    }
+  },
+  {
+    "id": "TC-AI-002",
+    "endpoint": "/api/generate_content_with_ai",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "generate content AI",
+    "response": {
+      "status": 400,
+      "error": "prompt_text is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-AI-004",
+    "endpoint": "/api/ai_hashtags",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "ai hashtags",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "hashtags": [
+        "testing",
+        "software",
+        "technology",
+        "qualityassurance",
+        "qa",
+        "testingtools",
+        "bugtesting",
+        "automationtesting",
+        "softwaretesting",
+        "testcase"
+      ]
+    }
+  }
+]

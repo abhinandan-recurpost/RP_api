@@ -1,0 +1,44 @@
+[
+  {
+    "id": "TC-TB-001",
+    "endpoint": "/api/tag_bags_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "tag bags list",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "bags": [],
+      "total": 0,
+      "page": 1,
+      "per_page": 20
+    }
+  },
+  {
+    "id": "TC-TB-002",
+    "endpoint": "/api/tag_bags_add",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "tag bag add",
+    "response": {
+      "status": 400,
+      "error": "name (500 characters at most) and hashtags (1000 at most) are required.",
+      "code": "invalid_param"
+    }
+  },
+  {
+    "id": "TC-TB-004",
+    "endpoint": "/api/tag_bags_delete",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "tag bag delete",
+    "response": {
+      "status": 400,
+      "error": "bag_id is not a valid id.",
+      "code": "invalid_id"
+    }
+  }
+]

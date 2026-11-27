@@ -1,0 +1,2997 @@
+[
+  {
+    "id": "TC-REP-001",
+    "endpoint": "/api/report_account",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "report account",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "account": null,
+      "period": {
+        "start": "2026-11-20",
+        "end": "2026-11-26",
+        "compare_start": "2026-11-13",
+        "compare_end": "2026-11-19"
+      },
+      "report": {
+        "summary": {
+          "total_posts": {
+            "overall_total": {
+              "cur_count": 34,
+              "prev_count": 9,
+              "percentage": 277.78,
+              "flag": "up"
+            },
+            "platform_wise_total": [
+              {
+                "network": "facebook",
+                "sm_name": "Facebook Profile",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "facebook",
+                "sm_name": "Facebook Page",
+                "cur_count": 0,
+                "prev_count": "3",
+                "percentage": 100,
+                "flag": "down"
+              },
+              {
+                "network": "twitter",
+                "sm_name": "X (Twitter) Profile",
+                "cur_count": "26",
+                "prev_count": "3",
+                "percentage": 766.67,
+                "flag": "up"
+              },
+              {
+                "network": "linkedin",
+                "sm_name": "LinkedIn Profile",
+                "cur_count": "2",
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "linkedin",
+                "sm_name": "LinkedIn Company",
+                "cur_count": "1",
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "instagram",
+                "sm_name": "Instagram Personal Profile",
+                "cur_count": "1",
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "instagram",
+                "sm_name": "Instagram Business Profile",
+                "cur_count": "1",
+                "prev_count": "1",
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "pinterest",
+                "sm_name": "Pinterest Board",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "tiktok",
+                "sm_name": "TikTok Profile",
+                "cur_count": 0,
+                "prev_count": "2",
+                "percentage": 100,
+                "flag": "down"
+              },
+              {
+                "network": "youtube",
+                "sm_name": "YouTube Channel",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "threads",
+                "sm_name": "Threads Profile",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "bluesky",
+                "sm_name": "Bluesky Profile",
+                "cur_count": "3",
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              }
+            ]
+          },
+          "post_likes": {
+            "overall_total": {
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up"
+            },
+            "platform_wise_total": [
+              {
+                "network": "facebook",
+                "sm_name": "Facebook Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "facebook",
+                "sm_name": "Facebook Page",
+                "cur_count": 0,
+                "prev_count": "0",
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "twitter",
+                "sm_name": "X (Twitter) Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "linkedin",
+                "sm_name": "LinkedIn Profile",
+                "cur_count": "0",
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "linkedin",
+                "sm_name": "LinkedIn Company",
+                "cur_count": "0",
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "instagram",
+                "sm_name": "Instagram Personal Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "instagram",
+                "sm_name": "Instagram Business Profile",
+                "cur_count": "0",
+                "prev_count": "0",
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "pinterest",
+                "sm_name": "Pinterest Board",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "tiktok",
+                "sm_name": "TikTok Profile",
+                "cur_count": 0,
+                "prev_count": "0",
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "youtube",
+                "sm_name": "YouTube Channel",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "threads",
+                "sm_name": "Threads Profile",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "bluesky",
+                "sm_name": "Bluesky Profile",
+                "cur_count": "0",
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              }
+            ]
+          },
+          "post_comments": {
+            "overall_total": {
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up"
+            },
+            "platform_wise_total": [
+              {
+                "network": "facebook",
+                "sm_name": "Facebook Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "facebook",
+                "sm_name": "Facebook Page",
+                "cur_count": 0,
+                "prev_count": "0",
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "twitter",
+                "sm_name": "X (Twitter) Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "linkedin",
+                "sm_name": "LinkedIn Profile",
+                "cur_count": "0",
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "linkedin",
+                "sm_name": "LinkedIn Company",
+                "cur_count": "0",
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "instagram",
+                "sm_name": "Instagram Personal Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "instagram",
+                "sm_name": "Instagram Business Profile",
+                "cur_count": "0",
+                "prev_count": "0",
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "pinterest",
+                "sm_name": "Pinterest Board",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "tiktok",
+                "sm_name": "TikTok Profile",
+                "cur_count": 0,
+                "prev_count": "0",
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "youtube",
+                "sm_name": "YouTube Channel",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "threads",
+                "sm_name": "Threads Profile",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "bluesky",
+                "sm_name": "Bluesky Profile",
+                "cur_count": "0",
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              }
+            ]
+          },
+          "post_views": {
+            "overall_total": {
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up"
+            },
+            "platform_wise_total": [
+              {
+                "network": "facebook",
+                "sm_name": "Facebook Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "facebook",
+                "sm_name": "Facebook Page",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "twitter",
+                "sm_name": "X (Twitter) Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "linkedin",
+                "sm_name": "LinkedIn Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "linkedin",
+                "sm_name": "LinkedIn Company",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "instagram",
+                "sm_name": "Instagram Personal Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "instagram",
+                "sm_name": "Instagram Business Profile",
+                "cur_count": "0",
+                "prev_count": "0",
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "pinterest",
+                "sm_name": "Pinterest Board",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "tiktok",
+                "sm_name": "TikTok Profile",
+                "cur_count": 0,
+                "prev_count": "0",
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "youtube",
+                "sm_name": "YouTube Channel",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "threads",
+                "sm_name": "Threads Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "bluesky",
+                "sm_name": "Bluesky Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              }
+            ]
+          },
+          "post_shares": {
+            "overall_total": {
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up"
+            },
+            "platform_wise_total": [
+              {
+                "network": "facebook",
+                "sm_name": "Facebook Profile",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "facebook",
+                "sm_name": "Facebook Page",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "twitter",
+                "sm_name": "X (Twitter) Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "linkedin",
+                "sm_name": "LinkedIn Profile",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "linkedin",
+                "sm_name": "LinkedIn Company",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "instagram",
+                "sm_name": "Instagram Personal Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "instagram",
+                "sm_name": "Instagram Business Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "pinterest",
+                "sm_name": "Pinterest Board",
+                "cur_count": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              {
+                "network": "tiktok",
+                "sm_name": "TikTok Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "youtube",
+                "sm_name": "YouTube Channel",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "threads",
+                "sm_name": "Threads Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              },
+              {
+                "network": "bluesky",
+                "sm_name": "Bluesky Profile",
+                "cur_count": "NA",
+                "prev_count": "NA",
+                "percentage": "NA",
+                "flag": "NA"
+              }
+            ]
+          }
+        },
+        "top5_posts": {
+          "all_top5_posts": [
+            {
+              "smpa_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+              "smpa_name": "Abhinandan Tiwari",
+              "smpa_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+              "network": "twitter",
+              "message": "gaana.com",
+              "title": "Download Latest MP3 Songs Online: Play Old &amp; New MP3 Music Online on Gaana.com",
+              "image_url": "https://a10.gaanacdn.com/images/social/gaana_social.jpg",
+              "link_url": "http://gaana.com",
+              "description": "Gaana.com- Listen &amp; Download latest MP3 songs online. Download new or old Hindi songs, Bollywood songs, English songs* &amp; more on Gaana+ and play offline. Create, share and listen to streaming music playlists.",
+              "doc_url": "",
+              "video_url": "",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "link",
+              "upcm_post_date": "23 November 2026, 12:38 PM",
+              "social_type": "tw",
+              "social_icon": "twitter",
+              "url": "https://www.twitter.com/em_trats_orp/status/2124762030158619073"
+            },
+            {
+              "smpa_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+              "smpa_name": "Abhinandan Tiwari",
+              "smpa_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+              "network": "twitter",
+              "message": "video post",
+              "title": "",
+              "image_url": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1795417141_6b03e435ce208.png",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "https://mediadev.recurpost.com/test_user_19931/video/1795417122_6b03e4226cfcb.mp4",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "video",
+              "upcm_post_date": "23 November 2026, 12:29 PM",
+              "social_type": "tw",
+              "social_icon": "twitter",
+              "url": "https://www.twitter.com/em_trats_orp/status/2124759714697220420"
+            },
+            {
+              "smpa_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+              "smpa_name": "Abhinandan Tiwari",
+              "smpa_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+              "network": "twitter",
+              "message": "image post with new token",
+              "title": "",
+              "image_url": "https://mediadev.recurpost.com/test_user_19931/images/1795417090_6b03e402254d1.png",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "image",
+              "upcm_post_date": "23 November 2026, 12:28 PM",
+              "social_type": "tw",
+              "social_icon": "twitter",
+              "url": "https://www.twitter.com/em_trats_orp/status/2124759436371624337"
+            },
+            {
+              "smpa_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+              "smpa_name": "Abhinandan Tiwari",
+              "smpa_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+              "network": "twitter",
+              "message": "new token on x",
+              "title": "",
+              "image_url": "",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "text",
+              "upcm_post_date": "23 November 2026, 12:27 PM",
+              "social_type": "tw",
+              "social_icon": "twitter",
+              "url": "https://www.twitter.com/em_trats_orp/status/2124759254313648313"
+            },
+            {
+              "smpa_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+              "smpa_name": "Abhinandan Tiwari",
+              "smpa_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+              "network": "twitter",
+              "message": "1st text post old",
+              "title": "",
+              "image_url": "",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "text",
+              "upcm_post_date": "23 November 2026, 12:22 PM",
+              "social_type": "tw",
+              "social_icon": "twitter",
+              "url": "https://www.twitter.com/em_trats_orp/status/2124757986006430182"
+            },
+            {
+              "smpa_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+              "smpa_name": "Abhinandan Tiwari",
+              "smpa_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+              "network": "twitter",
+              "message": "hbhgh",
+              "title": "",
+              "image_url": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1795416567_6b03e1f783474.png",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "https://mediadev.recurpost.com/test_user_19931/video/1795416544_6b03e1e0cc089.mp4",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "video",
+              "upcm_post_date": "23 November 2026, 12:19 PM",
+              "social_type": "tw",
+              "social_icon": "twitter",
+              "url": "https://www.twitter.com/em_trats_orp/status/2124757273817792714"
+            }
+          ],
+          "fb_top5_posts": [],
+          "tw_top5_posts": [
+            {
+              "smpa_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+              "smpa_name": "Abhinandan Tiwari",
+              "smpa_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+              "network": "twitter",
+              "message": "gaana.com",
+              "title": "Download Latest MP3 Songs Online: Play Old &amp; New MP3 Music Online on Gaana.com",
+              "image_url": "https://a10.gaanacdn.com/images/social/gaana_social.jpg",
+              "link_url": "http://gaana.com",
+              "description": "Gaana.com- Listen &amp; Download latest MP3 songs online. Download new or old Hindi songs, Bollywood songs, English songs* &amp; more on Gaana+ and play offline. Create, share and listen to streaming music playlists.",
+              "doc_url": "",
+              "video_url": "",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "link",
+              "upcm_post_date": "23 November 2026, 12:38 PM",
+              "social_type": "tw",
+              "social_icon": "twitter",
+              "url": "https://www.twitter.com/em_trats_orp/status/2124762030158619073"
+            },
+            {
+              "smpa_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+              "smpa_name": "Abhinandan Tiwari",
+              "smpa_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+              "network": "twitter",
+              "message": "video post",
+              "title": "",
+              "image_url": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1795417141_6b03e435ce208.png",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "https://mediadev.recurpost.com/test_user_19931/video/1795417122_6b03e4226cfcb.mp4",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "video",
+              "upcm_post_date": "23 November 2026, 12:29 PM",
+              "social_type": "tw",
+              "social_icon": "twitter",
+              "url": "https://www.twitter.com/em_trats_orp/status/2124759714697220420"
+            },
+            {
+              "smpa_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+              "smpa_name": "Abhinandan Tiwari",
+              "smpa_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+              "network": "twitter",
+              "message": "image post with new token",
+              "title": "",
+              "image_url": "https://mediadev.recurpost.com/test_user_19931/images/1795417090_6b03e402254d1.png",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "image",
+              "upcm_post_date": "23 November 2026, 12:28 PM",
+              "social_type": "tw",
+              "social_icon": "twitter",
+              "url": "https://www.twitter.com/em_trats_orp/status/2124759436371624337"
+            },
+            {
+              "smpa_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+              "smpa_name": "Abhinandan Tiwari",
+              "smpa_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+              "network": "twitter",
+              "message": "new token on x",
+              "title": "",
+              "image_url": "",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "text",
+              "upcm_post_date": "23 November 2026, 12:27 PM",
+              "social_type": "tw",
+              "social_icon": "twitter",
+              "url": "https://www.twitter.com/em_trats_orp/status/2124759254313648313"
+            },
+            {
+              "smpa_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+              "smpa_name": "Abhinandan Tiwari",
+              "smpa_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+              "network": "twitter",
+              "message": "1st text post old",
+              "title": "",
+              "image_url": "",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "text",
+              "upcm_post_date": "23 November 2026, 12:22 PM",
+              "social_type": "tw",
+              "social_icon": "twitter",
+              "url": "https://www.twitter.com/em_trats_orp/status/2124757986006430182"
+            },
+            {
+              "smpa_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+              "smpa_name": "Abhinandan Tiwari",
+              "smpa_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+              "network": "twitter",
+              "message": "hbhgh",
+              "title": "",
+              "image_url": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1795416567_6b03e1f783474.png",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "https://mediadev.recurpost.com/test_user_19931/video/1795416544_6b03e1e0cc089.mp4",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "video",
+              "upcm_post_date": "23 November 2026, 12:19 PM",
+              "social_type": "tw",
+              "social_icon": "twitter",
+              "url": "https://www.twitter.com/em_trats_orp/status/2124757273817792714"
+            }
+          ],
+          "li_top5_posts": [
+            {
+              "smpa_id": "EvXDdEB8AgADUkOOvAwKIg==",
+              "smpa_name": "Steeve Roggers",
+              "smpa_image": "https://media.licdn.com/dms/image/v2/D5603AQHIy05anuBgyw/profile-displayphoto-shrink_800_800/B56aBWnudPKAAc-/0/1788159650551?e=1795046400&v=beta&t=m9eIvax1mNyEeQQn1t67xWhzYxfgHGtx8Iqx8U-wKGc",
+              "network": "linkedin",
+              "message": "Hi this is test",
+              "title": "",
+              "image_url": "",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "text",
+              "upcm_post_date": "25 November 2026, 11:46 AM",
+              "social_type": "ln",
+              "social_icon": "linkedin",
+              "url": "https://www.linkedin.com/feed/update/urn:li:share:7531239272129970176"
+            },
+            {
+              "smpa_id": "iL/UELNkkC3tFDqlJTRwxw==",
+              "smpa_name": "dl91",
+              "smpa_image": "",
+              "network": "linkedin",
+              "message": "Hi this is test",
+              "title": "",
+              "image_url": "",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "text",
+              "upcm_post_date": "25 November 2026, 11:45 AM",
+              "social_type": "ln",
+              "social_icon": "linkedin",
+              "url": "https://www.linkedin.com/feed/update/urn:li:share:7531239224675581952"
+            },
+            {
+              "smpa_id": "EvXDdEB8AgADUkOOvAwKIg==",
+              "smpa_name": "Steeve Roggers",
+              "smpa_image": "https://media.licdn.com/dms/image/v2/D5603AQHIy05anuBgyw/profile-displayphoto-shrink_800_800/B56aBWnudPKAAc-/0/1788159650551?e=1795046400&v=beta&t=m9eIvax1mNyEeQQn1t67xWhzYxfgHGtx8Iqx8U-wKGc",
+              "network": "linkedin",
+              "message": "Business mein har opportunity ko YES bolna zaroori nahi hai.\n\nKabhi-kabhi ek attractive opportunity aapko growth ka shortcut lagti hai. Lekin kya woh sach mein aapke business ke liye",
+              "title": "",
+              "image_url": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1795502134_6b053036f0f24.png",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "https://mediadev.recurpost.com/test_user_19931/video/1795501986_6b052fa210cab.mp4",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "video",
+              "upcm_post_date": "24 November 2026, 12:05 PM",
+              "social_type": "ln",
+              "social_icon": "linkedin",
+              "url": "https://www.linkedin.com/feed/update/urn:li:ugcPost:7530881762936303618"
+            }
+          ],
+          "gmb_top5_posts": [],
+          "insta_top5_posts": [
+            {
+              "smpa_id": "3/Ex5eRQYjU2UMGgZ+zt1w==",
+              "smpa_name": "steffen__heree",
+              "smpa_image": "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-15/747409578_18146339338492348_8742410897344208354_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7d201b&_nc_ohc=3Fy20NBDJf8Q7kNvwGb1q7j&_nc_oc=AdoTW0jEujlP7HMRE9w-V9LnpI0u4px0o8QIxOjak4r8poSqmgRJJ6L2snBgLpLzJAU4xhN5hYlTojClzcTAC9gv&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AL-3X8kEAAAA&_nc_gid=Qxn25eOf3Vtq09ZJXSjQnQ&oh=00_AQHKQGACgGhK-L-JIKI4cP_hEw8ENuEglyihjR2mgdsxpg&oe=6A91FAEB",
+              "network": "instagram",
+              "message": "Hi this is test",
+              "title": "",
+              "image_url": "https://mediadev.recurpost.com/test_user_19931/images/1795587344_6b067d105b179.png",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "image",
+              "upcm_post_date": "25 November 2026, 11:46 AM",
+              "social_type": "in",
+              "social_icon": "instagram",
+              "url": "https://www.instagram.com/p/DgJ3VHJF_vi/"
+            }
+          ],
+          "pinterest_top5_posts": [],
+          "tiktok_top5_posts": [],
+          "youtube_top5_posts": [],
+          "threads_top5_posts": [],
+          "bluesky_top5_posts": [
+            {
+              "smpa_id": "eGy28zCzs37vnGzM6d0DEw==",
+              "smpa_name": "mbapu.bsky.social",
+              "smpa_image": "https://cdn.bsky.app/img/avatar/plain/did:plc:quba26jpbspti77cpybukjgb/bafkreigmholtthcah6qpipsqaewahguj6lbeszdie6wenszlsr3v5nxu6y",
+              "network": "bluesky",
+              "message": "bsky library posting\n\n\n\ud83d\ude02",
+              "title": "",
+              "image_url": "https://mediadev.recurpost.com/test_user_19931/images/1795680946_6b07eab20be5a.png",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "image",
+              "upcm_post_date": "26 November 2026, 01:55 PM",
+              "social_type": "bs",
+              "social_icon": "Bluesky",
+              "url": "https://bsky.app/profile/mbapu.bsky.social/post/3n37ararqgw2v"
+            },
+            {
+              "smpa_id": "eGy28zCzs37vnGzM6d0DEw==",
+              "smpa_name": "mbapu.bsky.social",
+              "smpa_image": "https://cdn.bsky.app/img/avatar/plain/did:plc:quba26jpbspti77cpybukjgb/bafkreigmholtthcah6qpipsqaewahguj6lbeszdie6wenszlsr3v5nxu6y",
+              "network": "bluesky",
+              "message": "test bsky posting sccheduled",
+              "title": "",
+              "image_url": "",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "text",
+              "upcm_post_date": "26 November 2026, 01:47 PM",
+              "social_type": "bs",
+              "social_icon": "Bluesky",
+              "url": "https://bsky.app/profile/mbapu.bsky.social/post/3n37acrmjlg2f"
+            },
+            {
+              "smpa_id": "eGy28zCzs37vnGzM6d0DEw==",
+              "smpa_name": "mbapu.bsky.social",
+              "smpa_image": "https://cdn.bsky.app/img/avatar/plain/did:plc:quba26jpbspti77cpybukjgb/bafkreigmholtthcah6qpipsqaewahguj6lbeszdie6wenszlsr3v5nxu6y",
+              "network": "bluesky",
+              "message": "test bsky posting",
+              "title": "",
+              "image_url": "",
+              "link_url": "",
+              "description": "",
+              "doc_url": "",
+              "video_url": "",
+              "total_likes": "0",
+              "total_comments": "0",
+              "total_retweet_count": "0",
+              "total_engagement_count": 0,
+              "type": "text",
+              "upcm_post_date": "26 November 2026, 01:43 PM",
+              "social_type": "bs",
+              "social_icon": "Bluesky",
+              "url": "https://bsky.app/profile/mbapu.bsky.social/post/3n37a5athpx2z"
+            }
+          ]
+        },
+        "engagement_by_library_graph": {
+          "chart_data": {
+            "bsky posting": {
+              "retweets": 0,
+              "shares": 0,
+              "views": 0,
+              "clicks": 0,
+              "likes": 0,
+              "comments": 0,
+              "cd_name": "bsky posting",
+              "posts": 1,
+              "cd_color": "#10b981"
+            }
+          },
+          "chart_max_data": {
+            "max_shares": 0,
+            "max_retweet": 0,
+            "max_likes": 0,
+            "max_comments": 0,
+            "max_views": 0,
+            "max_clicks": 0,
+            "max_post": 1
+          }
+        },
+        "yt_info_message": "",
+        "per_account_table": [
+          {
+            "smpa_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+            "network": "twitter",
+            "smpa_name": "Abhinandan Tiwari",
+            "smpa_image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+            "tracking_on": 0,
+            "report_accessible": 1,
+            "engagement": 0,
+            "metrics": {
+              "likes": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "shares": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "comments": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "retweets": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "posts": {
+                "value": 26,
+                "prev_count": 3,
+                "percentage": 766.67,
+                "flag": "up"
+              },
+              "views": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "clicks": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              }
+            }
+          },
+          {
+            "smpa_id": "EvXDdEB8AgADUkOOvAwKIg==",
+            "network": "linkedin",
+            "smpa_name": "Steeve Roggers",
+            "smpa_image": "https://media.licdn.com/dms/image/v2/D5603AQHIy05anuBgyw/profile-displayphoto-shrink_800_800/B56aBWnudPKAAc-/0/1788159650551?e=1795046400&v=beta&t=m9eIvax1mNyEeQQn1t67xWhzYxfgHGtx8Iqx8U-wKGc",
+            "tracking_on": 0,
+            "report_accessible": 1,
+            "engagement": 0,
+            "metrics": {
+              "likes": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "shares": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "comments": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "retweets": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "posts": {
+                "value": 2,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "views": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "clicks": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              }
+            }
+          },
+          {
+            "smpa_id": "iL/UELNkkC3tFDqlJTRwxw==",
+            "network": "linkedin",
+            "smpa_name": "dl91",
+            "smpa_image": "",
+            "tracking_on": 0,
+            "report_accessible": 1,
+            "engagement": 0,
+            "metrics": {
+              "likes": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "shares": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "comments": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "retweets": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "posts": {
+                "value": 1,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "views": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "clicks": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              }
+            }
+          },
+          {
+            "smpa_id": "3/Ex5eRQYjU2UMGgZ+zt1w==",
+            "network": "instagram",
+            "smpa_name": "steffen__heree",
+            "smpa_image": "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-15/747409578_18146339338492348_8742410897344208354_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7d201b&_nc_ohc=3Fy20NBDJf8Q7kNvwGb1q7j&_nc_oc=AdoTW0jEujlP7HMRE9w-V9LnpI0u4px0o8QIxOjak4r8poSqmgRJJ6L2snBgLpLzJAU4xhN5hYlTojClzcTAC9gv&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AL-3X8kEAAAA&_nc_gid=Qxn25eOf3Vtq09ZJXSjQnQ&oh=00_AQHKQGACgGhK-L-JIKI4cP_hEw8ENuEglyihjR2mgdsxpg&oe=6A91FAEB",
+            "tracking_on": 0,
+            "report_accessible": 1,
+            "engagement": 0,
+            "metrics": {
+              "likes": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "shares": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "comments": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "retweets": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "posts": {
+                "value": 1,
+                "prev_count": 1,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "views": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "clicks": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              }
+            }
+          },
+          {
+            "smpa_id": "zaSAXjAaiJuJLJMkxFogKg==",
+            "network": "instagram",
+            "smpa_name": "weir.dshakshi/",
+            "smpa_image": "",
+            "tracking_on": 0,
+            "report_accessible": 1,
+            "engagement": 0,
+            "metrics": {
+              "likes": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "shares": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "comments": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "retweets": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "posts": {
+                "value": 1,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "views": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "clicks": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              }
+            }
+          },
+          {
+            "smpa_id": "eGy28zCzs37vnGzM6d0DEw==",
+            "network": "bluesky",
+            "smpa_name": "mbapu.bsky.social",
+            "smpa_image": "https://cdn.bsky.app/img/avatar/plain/did:plc:quba26jpbspti77cpybukjgb/bafkreigmholtthcah6qpipsqaewahguj6lbeszdie6wenszlsr3v5nxu6y",
+            "tracking_on": 0,
+            "report_accessible": 1,
+            "engagement": 0,
+            "metrics": {
+              "likes": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "shares": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "comments": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "retweets": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "posts": {
+                "value": 3,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "views": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "clicks": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              }
+            }
+          },
+          {
+            "smpa_id": "jA7Q1yF07HwlvJuo5xgkTg==",
+            "network": "tiktok",
+            "smpa_name": "steeve23fg",
+            "smpa_image": "https://p19-common-sign.tiktokcdn-us.com/musically-maliva-obj/1594805258216454~tplv-tiktokx-cropcenter:168:168.jpeg?dr=9638&refresh_token=207c63d6&x-expires=1794121200&x-signature=H87aR6B3scsvp%2Bxm%2BpqtH4B707A%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=8aecc5ac&idc=useast5",
+            "tracking_on": 0,
+            "report_accessible": 1,
+            "engagement": 0,
+            "metrics": {
+              "likes": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "shares": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "comments": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "retweets": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "posts": {
+                "value": 0,
+                "prev_count": 2,
+                "percentage": 100,
+                "flag": "down"
+              },
+              "views": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "clicks": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              }
+            }
+          },
+          {
+            "smpa_id": "0uOo2WQvrGnDbDGBuT7nFA==",
+            "network": "facebook",
+            "smpa_name": "Steffen Fitnes",
+            "smpa_image": "https://graph.facebook.com/v25.0/1195617413635646/picture?type=large",
+            "tracking_on": 0,
+            "report_accessible": 1,
+            "engagement": 0,
+            "metrics": {
+              "likes": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "shares": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "comments": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "retweets": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "posts": {
+                "value": 0,
+                "prev_count": 3,
+                "percentage": 100,
+                "flag": "down"
+              },
+              "views": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              },
+              "clicks": {
+                "value": 0,
+                "prev_count": 0,
+                "percentage": 0,
+                "flag": "up"
+              }
+            }
+          }
+        ],
+        "link_tracking": {
+          "state": "none",
+          "global": 0,
+          "per_account": {
+            "hg6bSe7ZXxKXOiiSE83AQw==": 0,
+            "0uOo2WQvrGnDbDGBuT7nFA==": 0,
+            "iL/UELNkkC3tFDqlJTRwxw==": 0,
+            "Zx+/8rcGyhQ6gLuUczqkAA==": 0,
+            "RMc910GxXVUdU6RAw0K5Fw==": 0,
+            "eGy28zCzs37vnGzM6d0DEw==": 0,
+            "3/Ex5eRQYjU2UMGgZ+zt1w==": 0,
+            "jA7Q1yF07HwlvJuo5xgkTg==": 0,
+            "zaSAXjAaiJuJLJMkxFogKg==": 0,
+            "uR7goHC/+p/MZ0W8WS8QsA==": 0,
+            "EvXDdEB8AgADUkOOvAwKIg==": 0,
+            "WbcSnzn45Q1drz+8XeNsJA==": 0
+          },
+          "per_platform": {
+            "4": 0,
+            "2": 0,
+            "6": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "12": 0,
+            "13": 0,
+            "9": 0,
+            "1": 0,
+            "5": 0,
+            "10": 0
+          }
+        },
+        "link_clicks": {
+          "overall_total": {
+            "cur_count": 0,
+            "prev_count": 0,
+            "percentage": 0,
+            "flag": "up"
+          },
+          "platform_wise_total": [
+            {
+              "network": "twitter",
+              "sm_name": "X (Twitter) Profile",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up"
+            },
+            {
+              "network": "linkedin",
+              "sm_name": "LinkedIn Profile",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up"
+            },
+            {
+              "network": "linkedin",
+              "sm_name": "LinkedIn Company",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up"
+            },
+            {
+              "network": "instagram",
+              "sm_name": "Instagram Business Profile",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up"
+            },
+            {
+              "network": "instagram",
+              "sm_name": "Instagram Personal Profile",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up"
+            },
+            {
+              "network": "bluesky",
+              "sm_name": "Bluesky Profile",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up"
+            },
+            {
+              "network": "tiktok",
+              "sm_name": "TikTok Profile",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up"
+            },
+            {
+              "network": "facebook",
+              "sm_name": "Facebook Page",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up"
+            }
+          ],
+          "platform_wise_all": [
+            {
+              "network": "facebook",
+              "sm_name": "Facebook Profile",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up",
+              "tracking_on": 0
+            },
+            {
+              "network": "facebook",
+              "sm_name": "Facebook Page",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up",
+              "tracking_on": 0
+            },
+            {
+              "network": "twitter",
+              "sm_name": "X (Twitter) Profile",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up",
+              "tracking_on": 0
+            },
+            {
+              "network": "linkedin",
+              "sm_name": "LinkedIn Profile",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up",
+              "tracking_on": 0
+            },
+            {
+              "network": "linkedin",
+              "sm_name": "LinkedIn Company",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up",
+              "tracking_on": 0
+            },
+            {
+              "network": "instagram",
+              "sm_name": "Instagram Personal Profile",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up",
+              "tracking_on": 0
+            },
+            {
+              "network": "instagram",
+              "sm_name": "Instagram Business Profile",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up",
+              "tracking_on": 0
+            },
+            {
+              "network": "pinterest",
+              "sm_name": "Pinterest Board",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up",
+              "tracking_on": 0
+            },
+            {
+              "network": "tiktok",
+              "sm_name": "TikTok Profile",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up",
+              "tracking_on": 0
+            },
+            {
+              "network": "youtube",
+              "sm_name": "YouTube Channel",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up",
+              "tracking_on": 0
+            },
+            {
+              "network": "threads",
+              "sm_name": "Threads Profile",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up",
+              "tracking_on": 0
+            },
+            {
+              "network": "bluesky",
+              "sm_name": "Bluesky Profile",
+              "cur_count": 0,
+              "prev_count": 0,
+              "percentage": 0,
+              "flag": "up",
+              "tracking_on": 0
+            }
+          ]
+        },
+        "chartEngagementsByAccount": {
+          "animation": true,
+          "animationDuration": 800,
+          "animationEasing": "cubicOut",
+          "grid": {
+            "top": 10,
+            "right": 70,
+            "bottom": 10,
+            "left": 20,
+            "containLabel": true
+          },
+          "tooltip": {
+            "trigger": "axis",
+            "axisPointer": {
+              "type": "shadow"
+            },
+            "backgroundColor": "#0F172A",
+            "borderColor": "#0F172A",
+            "textStyle": {
+              "color": "#fff",
+              "fontSize": 12
+            }
+          },
+          "xAxis": {
+            "type": "value",
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "color": "#64748B",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "lineStyle": {
+                "color": "#E2E8F0",
+                "type": "dashed"
+              }
+            }
+          },
+          "yAxis": {
+            "type": "category",
+            "data": [
+              "Abhinandan Tiwari (X (Twitter))",
+              "Steeve Roggers (LinkedIn)",
+              "dl91 (LinkedIn)",
+              "steffen__heree (Instagram)",
+              "weir.dshakshi/ (Instagram)",
+              "mbapu.bsky.social (Bluesky)",
+              "steeve23fg (TikTok)",
+              "Steffen Fitnes (Facebook)"
+            ],
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "color": "#64748B",
+              "fontSize": 11
+            }
+          },
+          "series": [
+            {
+              "type": "bar",
+              "barMaxWidth": 20,
+              "label": {
+                "show": true,
+                "position": "right",
+                "color": "#64748B",
+                "fontSize": 11
+              },
+              "data": [
+                {
+                  "value": 0,
+                  "itemStyle": {
+                    "color": {
+                      "type": "linear",
+                      "x": 0,
+                      "y": 0,
+                      "x2": 1,
+                      "y2": 0,
+                      "colorStops": [
+                        {
+                          "offset": 0,
+                          "color": "rgba(29,161,242,0.3)"
+                        },
+                        {
+                          "offset": 1,
+                          "color": "rgba(29,161,242,0.9)"
+                        }
+                      ]
+                    },
+                    "borderRadius": [
+                      0,
+                      4,
+                      4,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "value": 0,
+                  "itemStyle": {
+                    "color": {
+                      "type": "linear",
+                      "x": 0,
+                      "y": 0,
+                      "x2": 1,
+                      "y2": 0,
+                      "colorStops": [
+                        {
+                          "offset": 0,
+                          "color": "rgba(10,102,194,0.3)"
+                        },
+                        {
+                          "offset": 1,
+                          "color": "rgba(10,102,194,0.9)"
+                        }
+                      ]
+                    },
+                    "borderRadius": [
+                      0,
+                      4,
+                      4,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "value": 0,
+                  "itemStyle": {
+                    "color": {
+                      "type": "linear",
+                      "x": 0,
+                      "y": 0,
+                      "x2": 1,
+                      "y2": 0,
+                      "colorStops": [
+                        {
+                          "offset": 0,
+                          "color": "rgba(10,102,194,0.3)"
+                        },
+                        {
+                          "offset": 1,
+                          "color": "rgba(10,102,194,0.9)"
+                        }
+                      ]
+                    },
+                    "borderRadius": [
+                      0,
+                      4,
+                      4,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "value": 0,
+                  "itemStyle": {
+                    "color": {
+                      "type": "linear",
+                      "x": 0,
+                      "y": 0,
+                      "x2": 1,
+                      "y2": 0,
+                      "colorStops": [
+                        {
+                          "offset": 0,
+                          "color": "rgba(225,48,108,0.3)"
+                        },
+                        {
+                          "offset": 1,
+                          "color": "rgba(225,48,108,0.9)"
+                        }
+                      ]
+                    },
+                    "borderRadius": [
+                      0,
+                      4,
+                      4,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "value": 0,
+                  "itemStyle": {
+                    "color": {
+                      "type": "linear",
+                      "x": 0,
+                      "y": 0,
+                      "x2": 1,
+                      "y2": 0,
+                      "colorStops": [
+                        {
+                          "offset": 0,
+                          "color": "rgba(225,48,108,0.3)"
+                        },
+                        {
+                          "offset": 1,
+                          "color": "rgba(225,48,108,0.9)"
+                        }
+                      ]
+                    },
+                    "borderRadius": [
+                      0,
+                      4,
+                      4,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "value": 0,
+                  "itemStyle": {
+                    "color": {
+                      "type": "linear",
+                      "x": 0,
+                      "y": 0,
+                      "x2": 1,
+                      "y2": 0,
+                      "colorStops": [
+                        {
+                          "offset": 0,
+                          "color": "rgba(0,133,255,0.3)"
+                        },
+                        {
+                          "offset": 1,
+                          "color": "rgba(0,133,255,0.9)"
+                        }
+                      ]
+                    },
+                    "borderRadius": [
+                      0,
+                      4,
+                      4,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "value": 0,
+                  "itemStyle": {
+                    "color": {
+                      "type": "linear",
+                      "x": 0,
+                      "y": 0,
+                      "x2": 1,
+                      "y2": 0,
+                      "colorStops": [
+                        {
+                          "offset": 0,
+                          "color": "rgba(45,45,45,0.3)"
+                        },
+                        {
+                          "offset": 1,
+                          "color": "rgba(45,45,45,0.9)"
+                        }
+                      ]
+                    },
+                    "borderRadius": [
+                      0,
+                      4,
+                      4,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "value": 0,
+                  "itemStyle": {
+                    "color": {
+                      "type": "linear",
+                      "x": 0,
+                      "y": 0,
+                      "x2": 1,
+                      "y2": 0,
+                      "colorStops": [
+                        {
+                          "offset": 0,
+                          "color": "rgba(24,119,242,0.3)"
+                        },
+                        {
+                          "offset": 1,
+                          "color": "rgba(24,119,242,0.9)"
+                        }
+                      ]
+                    },
+                    "borderRadius": [
+                      0,
+                      4,
+                      4,
+                      0
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "chartEngagementByPlatform": {
+          "animation": true,
+          "animationDuration": 800,
+          "grid": {
+            "top": 20,
+            "right": 30,
+            "bottom": 60,
+            "left": 20,
+            "containLabel": true
+          },
+          "tooltip": {
+            "trigger": "axis",
+            "axisPointer": {
+              "type": "shadow"
+            },
+            "backgroundColor": "#0F172A",
+            "borderColor": "#0F172A",
+            "textStyle": {
+              "color": "#fff",
+              "fontSize": 12
+            }
+          },
+          "legend": {
+            "bottom": 0,
+            "icon": "roundRect",
+            "borderWidth": 0,
+            "itemWidth": 12,
+            "itemHeight": 8,
+            "itemGap": 16,
+            "textStyle": {
+              "color": "#64748B",
+              "fontSize": 12
+            }
+          },
+          "xAxis": {
+            "type": "category",
+            "data": [
+              "Likes",
+              "Shares",
+              "Comments",
+              "Retweets",
+              "Posts",
+              "Views"
+            ],
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "color": "#64748B",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "show": false
+            }
+          },
+          "yAxis": {
+            "type": "value",
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "color": "#64748B",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "lineStyle": {
+                "color": "#E2E8F0",
+                "type": "dashed"
+              }
+            }
+          },
+          "series": [
+            {
+              "name": "X (Twitter)",
+              "type": "bar",
+              "barMaxWidth": 10,
+              "itemStyle": {
+                "color": {
+                  "type": "linear",
+                  "x": 0,
+                  "y": 0,
+                  "x2": 0,
+                  "y2": 1,
+                  "colorStops": [
+                    {
+                      "offset": 0,
+                      "color": "rgba(29,161,242,0.85)"
+                    },
+                    {
+                      "offset": 1,
+                      "color": "rgba(29,161,242,0.3)"
+                    }
+                  ]
+                },
+                "borderRadius": [
+                  4,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                26,
+                0
+              ]
+            },
+            {
+              "name": "LinkedIn",
+              "type": "bar",
+              "barMaxWidth": 10,
+              "itemStyle": {
+                "color": {
+                  "type": "linear",
+                  "x": 0,
+                  "y": 0,
+                  "x2": 0,
+                  "y2": 1,
+                  "colorStops": [
+                    {
+                      "offset": 0,
+                      "color": "rgba(10,102,194,0.85)"
+                    },
+                    {
+                      "offset": 1,
+                      "color": "rgba(10,102,194,0.3)"
+                    }
+                  ]
+                },
+                "borderRadius": [
+                  4,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                3,
+                0
+              ]
+            },
+            {
+              "name": "Instagram",
+              "type": "bar",
+              "barMaxWidth": 10,
+              "itemStyle": {
+                "color": {
+                  "type": "linear",
+                  "x": 0,
+                  "y": 0,
+                  "x2": 0,
+                  "y2": 1,
+                  "colorStops": [
+                    {
+                      "offset": 0,
+                      "color": "rgba(225,48,108,0.85)"
+                    },
+                    {
+                      "offset": 1,
+                      "color": "rgba(225,48,108,0.3)"
+                    }
+                  ]
+                },
+                "borderRadius": [
+                  4,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "name": "Bluesky",
+              "type": "bar",
+              "barMaxWidth": 10,
+              "itemStyle": {
+                "color": {
+                  "type": "linear",
+                  "x": 0,
+                  "y": 0,
+                  "x2": 0,
+                  "y2": 1,
+                  "colorStops": [
+                    {
+                      "offset": 0,
+                      "color": "rgba(0,133,255,0.85)"
+                    },
+                    {
+                      "offset": 1,
+                      "color": "rgba(0,133,255,0.3)"
+                    }
+                  ]
+                },
+                "borderRadius": [
+                  4,
+                  4,
+                  0,
+                  0
+                ]
+              },
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                3,
+                0
+              ]
+            }
+          ]
+        },
+        "chartEngagementMix": {
+          "animation": true,
+          "animationDuration": 800,
+          "graphic": null,
+          "tooltip": {
+            "trigger": "item",
+            "backgroundColor": "#0F172A",
+            "borderColor": "#0F172A",
+            "textStyle": {
+              "color": "#fff",
+              "fontSize": 12
+            },
+            "formatter": "{b}: {c} ({d}%)"
+          },
+          "legend": {
+            "bottom": 0,
+            "icon": "circle",
+            "borderWidth": 0,
+            "itemWidth": 10,
+            "itemHeight": 10,
+            "itemGap": 16,
+            "textStyle": {
+              "color": "#64748B",
+              "fontSize": 12
+            }
+          },
+          "series": [
+            {
+              "type": "pie",
+              "radius": [
+                "45%",
+                "72%"
+              ],
+              "center": [
+                "50%",
+                "44%"
+              ],
+              "avoidLabelOverlap": true,
+              "minAngle": 15,
+              "itemStyle": {
+                "borderRadius": 6,
+                "borderWidth": 2,
+                "borderColor": "#fff"
+              },
+              "label": {
+                "show": false
+              },
+              "labelLine": {
+                "show": false,
+                "length": 12,
+                "length2": 12
+              },
+              "emphasis": {
+                "label": {
+                  "show": true,
+                  "fontWeight": "bold"
+                }
+              },
+              "data": [
+                {
+                  "value": 1,
+                  "name": "No engagement",
+                  "itemStyle": {
+                    "color": "#E2E8F0"
+                  },
+                  "label": {
+                    "show": false
+                  },
+                  "labelLine": {
+                    "show": false
+                  },
+                  "tooltip": {
+                    "show": false
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "chartShareOfVoice": {
+          "animation": true,
+          "animationDuration": 800,
+          "grid": {
+            "top": 10,
+            "right": 60,
+            "bottom": 10,
+            "left": 20,
+            "containLabel": true
+          },
+          "tooltip": {
+            "trigger": "axis",
+            "axisPointer": {
+              "type": "shadow"
+            },
+            "backgroundColor": "#0F172A",
+            "borderColor": "#0F172A",
+            "textStyle": {
+              "color": "#fff",
+              "fontSize": 12
+            }
+          },
+          "xAxis": {
+            "type": "value",
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "color": "#64748B",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "lineStyle": {
+                "color": "#E2E8F0",
+                "type": "dashed"
+              }
+            }
+          },
+          "yAxis": {
+            "type": "category",
+            "data": [
+              "Instagram",
+              "LinkedIn",
+              "Bluesky",
+              "X (Twitter)"
+            ],
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "color": "#64748B",
+              "fontSize": 11
+            }
+          },
+          "series": [
+            {
+              "type": "bar",
+              "barMaxWidth": 20,
+              "label": {
+                "show": true,
+                "position": "right",
+                "color": "#64748B",
+                "fontSize": 11
+              },
+              "data": [
+                {
+                  "value": 2,
+                  "itemStyle": {
+                    "color": {
+                      "type": "linear",
+                      "x": 0,
+                      "y": 0,
+                      "x2": 1,
+                      "y2": 0,
+                      "colorStops": [
+                        {
+                          "offset": 0,
+                          "color": "rgba(225,48,108,0.3)"
+                        },
+                        {
+                          "offset": 1,
+                          "color": "rgba(225,48,108,0.9)"
+                        }
+                      ]
+                    },
+                    "borderRadius": [
+                      0,
+                      4,
+                      4,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "value": 3,
+                  "itemStyle": {
+                    "color": {
+                      "type": "linear",
+                      "x": 0,
+                      "y": 0,
+                      "x2": 1,
+                      "y2": 0,
+                      "colorStops": [
+                        {
+                          "offset": 0,
+                          "color": "rgba(10,102,194,0.3)"
+                        },
+                        {
+                          "offset": 1,
+                          "color": "rgba(10,102,194,0.9)"
+                        }
+                      ]
+                    },
+                    "borderRadius": [
+                      0,
+                      4,
+                      4,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "value": 3,
+                  "itemStyle": {
+                    "color": {
+                      "type": "linear",
+                      "x": 0,
+                      "y": 0,
+                      "x2": 1,
+                      "y2": 0,
+                      "colorStops": [
+                        {
+                          "offset": 0,
+                          "color": "rgba(0,133,255,0.3)"
+                        },
+                        {
+                          "offset": 1,
+                          "color": "rgba(0,133,255,0.9)"
+                        }
+                      ]
+                    },
+                    "borderRadius": [
+                      0,
+                      4,
+                      4,
+                      0
+                    ]
+                  }
+                },
+                {
+                  "value": 26,
+                  "itemStyle": {
+                    "color": {
+                      "type": "linear",
+                      "x": 0,
+                      "y": 0,
+                      "x2": 1,
+                      "y2": 0,
+                      "colorStops": [
+                        {
+                          "offset": 0,
+                          "color": "rgba(29,161,242,0.3)"
+                        },
+                        {
+                          "offset": 1,
+                          "color": "rgba(29,161,242,0.9)"
+                        }
+                      ]
+                    },
+                    "borderRadius": [
+                      0,
+                      4,
+                      4,
+                      0
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "chartPostsTrend": {
+          "animation": true,
+          "animationDuration": 800,
+          "animationEasing": "cubicOut",
+          "grid": {
+            "top": 20,
+            "right": 20,
+            "bottom": 50,
+            "left": 20,
+            "containLabel": true
+          },
+          "tooltip": {
+            "trigger": "axis",
+            "backgroundColor": "#0F172A",
+            "borderColor": "#0F172A",
+            "textStyle": {
+              "color": "#fff",
+              "fontSize": 12
+            },
+            "axisPointer": {
+              "lineStyle": {
+                "color": "#E8ECF1"
+              }
+            }
+          },
+          "legend": {
+            "bottom": 0,
+            "icon": "roundRect",
+            "borderWidth": 0,
+            "itemWidth": 12,
+            "itemHeight": 8,
+            "itemGap": 20,
+            "textStyle": {
+              "color": "#64748B",
+              "fontSize": 12
+            }
+          },
+          "xAxis": {
+            "type": "category",
+            "data": [
+              "Nov 20",
+              "Nov 21",
+              "Nov 22",
+              "Nov 23",
+              "Nov 24",
+              "Nov 25",
+              "Nov 26"
+            ],
+            "boundaryGap": false,
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "color": "#64748B",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "show": false
+            }
+          },
+          "yAxis": {
+            "type": "value",
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "color": "#64748B",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "lineStyle": {
+                "color": "#E2E8F0",
+                "type": "dashed"
+              }
+            }
+          },
+          "series": [
+            {
+              "name": "Posts Published",
+              "type": "line",
+              "smooth": true,
+              "symbol": "circle",
+              "symbolSize": 6,
+              "showSymbol": false,
+              "lineStyle": {
+                "width": 2.5,
+                "color": "#3B82F6"
+              },
+              "itemStyle": {
+                "color": "#3B82F6"
+              },
+              "data": [
+                0,
+                0,
+                0,
+                23,
+                1,
+                7,
+                3
+              ],
+              "areaStyle": {
+                "color": {
+                  "type": "linear",
+                  "x": 0,
+                  "y": 0,
+                  "x2": 0,
+                  "y2": 1,
+                  "colorStops": [
+                    {
+                      "offset": 0,
+                      "color": "rgba(59,130,246,0.18)"
+                    },
+                    {
+                      "offset": 1,
+                      "color": "rgba(59,130,246,0.02)"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "chartEngagementsOverTime": {
+          "animation": true,
+          "animationDuration": 800,
+          "animationEasing": "cubicOut",
+          "grid": {
+            "top": 20,
+            "right": 20,
+            "bottom": 50,
+            "left": 20,
+            "containLabel": true
+          },
+          "tooltip": {
+            "trigger": "axis",
+            "backgroundColor": "#0F172A",
+            "borderColor": "#0F172A",
+            "textStyle": {
+              "color": "#fff",
+              "fontSize": 12
+            },
+            "axisPointer": {
+              "lineStyle": {
+                "color": "#E8ECF1"
+              }
+            }
+          },
+          "legend": {
+            "bottom": 0,
+            "icon": "roundRect",
+            "borderWidth": 0,
+            "itemWidth": 12,
+            "itemHeight": 8,
+            "itemGap": 20,
+            "textStyle": {
+              "color": "#64748B",
+              "fontSize": 12
+            }
+          },
+          "xAxis": {
+            "type": "category",
+            "data": [
+              "Nov 20",
+              "Nov 21",
+              "Nov 22",
+              "Nov 23",
+              "Nov 24",
+              "Nov 25",
+              "Nov 26"
+            ],
+            "boundaryGap": false,
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "color": "#64748B",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "show": false
+            }
+          },
+          "yAxis": {
+            "type": "value",
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "color": "#64748B",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "lineStyle": {
+                "color": "#E2E8F0",
+                "type": "dashed"
+              }
+            }
+          },
+          "series": []
+        },
+        "chartLikesCommentsTrend": {
+          "animation": true,
+          "animationDuration": 800,
+          "animationEasing": "cubicOut",
+          "grid": {
+            "top": 20,
+            "right": 20,
+            "bottom": 50,
+            "left": 20,
+            "containLabel": true
+          },
+          "tooltip": {
+            "trigger": "axis",
+            "backgroundColor": "#0F172A",
+            "borderColor": "#0F172A",
+            "textStyle": {
+              "color": "#fff",
+              "fontSize": 12
+            },
+            "axisPointer": {
+              "lineStyle": {
+                "color": "#E8ECF1"
+              }
+            }
+          },
+          "legend": {
+            "bottom": 0,
+            "icon": "roundRect",
+            "borderWidth": 0,
+            "itemWidth": 12,
+            "itemHeight": 8,
+            "itemGap": 20,
+            "textStyle": {
+              "color": "#64748B",
+              "fontSize": 12
+            }
+          },
+          "xAxis": {
+            "type": "category",
+            "data": [
+              "Nov 20",
+              "Nov 21",
+              "Nov 22",
+              "Nov 23",
+              "Nov 24",
+              "Nov 25",
+              "Nov 26"
+            ],
+            "boundaryGap": false,
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "color": "#64748B",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "show": false
+            }
+          },
+          "yAxis": {
+            "type": "value",
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "color": "#64748B",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "lineStyle": {
+                "color": "#E2E8F0",
+                "type": "dashed"
+              }
+            }
+          },
+          "series": [
+            {
+              "name": "Likes",
+              "type": "line",
+              "smooth": true,
+              "symbol": "circle",
+              "symbolSize": 6,
+              "showSymbol": false,
+              "lineStyle": {
+                "width": 2.5,
+                "color": "#F43F5E"
+              },
+              "itemStyle": {
+                "color": "#F43F5E"
+              },
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "areaStyle": {
+                "color": {
+                  "type": "linear",
+                  "x": 0,
+                  "y": 0,
+                  "x2": 0,
+                  "y2": 1,
+                  "colorStops": [
+                    {
+                      "offset": 0,
+                      "color": "rgba(244,63,94,0.18)"
+                    },
+                    {
+                      "offset": 1,
+                      "color": "rgba(244,63,94,0.02)"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "name": "Comments",
+              "type": "line",
+              "smooth": true,
+              "symbol": "circle",
+              "symbolSize": 6,
+              "showSymbol": false,
+              "lineStyle": {
+                "width": 2.5,
+                "color": "#8B5CF6"
+              },
+              "itemStyle": {
+                "color": "#8B5CF6"
+              },
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "areaStyle": {
+                "color": {
+                  "type": "linear",
+                  "x": 0,
+                  "y": 0,
+                  "x2": 0,
+                  "y2": 1,
+                  "colorStops": [
+                    {
+                      "offset": 0,
+                      "color": "rgba(139,92,246,0.18)"
+                    },
+                    {
+                      "offset": 1,
+                      "color": "rgba(139,92,246,0.02)"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "chartViewsTrend": {
+          "animation": true,
+          "animationDuration": 800,
+          "animationEasing": "cubicOut",
+          "grid": {
+            "top": 20,
+            "right": 20,
+            "bottom": 50,
+            "left": 20,
+            "containLabel": true
+          },
+          "tooltip": {
+            "trigger": "axis",
+            "backgroundColor": "#0F172A",
+            "borderColor": "#0F172A",
+            "textStyle": {
+              "color": "#fff",
+              "fontSize": 12
+            },
+            "axisPointer": {
+              "lineStyle": {
+                "color": "#E8ECF1"
+              }
+            }
+          },
+          "legend": {
+            "bottom": 0,
+            "icon": "roundRect",
+            "borderWidth": 0,
+            "itemWidth": 12,
+            "itemHeight": 8,
+            "itemGap": 20,
+            "textStyle": {
+              "color": "#64748B",
+              "fontSize": 12
+            }
+          },
+          "xAxis": {
+            "type": "category",
+            "data": [
+              "Nov 20",
+              "Nov 21",
+              "Nov 22",
+              "Nov 23",
+              "Nov 24",
+              "Nov 25",
+              "Nov 26"
+            ],
+            "boundaryGap": false,
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "color": "#64748B",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "show": false
+            }
+          },
+          "yAxis": {
+            "type": "value",
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "color": "#64748B",
+              "fontSize": 11
+            },
+            "splitLine": {
+              "lineStyle": {
+                "color": "#E2E8F0",
+                "type": "dashed"
+              }
+            }
+          },
+          "series": [
+            {
+              "name": "Views",
+              "type": "line",
+              "smooth": true,
+              "symbol": "circle",
+              "symbolSize": 6,
+              "showSymbol": false,
+              "lineStyle": {
+                "width": 2.5,
+                "color": "#06B6D4"
+              },
+              "itemStyle": {
+                "color": "#06B6D4"
+              },
+              "data": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "areaStyle": {
+                "color": {
+                  "type": "linear",
+                  "x": 0,
+                  "y": 0,
+                  "x2": 0,
+                  "y2": 1,
+                  "colorStops": [
+                    {
+                      "offset": 0,
+                      "color": "rgba(6,182,212,0.18)"
+                    },
+                    {
+                      "offset": 1,
+                      "color": "rgba(6,182,212,0.02)"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "TC-REP-002",
+    "endpoint": "/api/report_posts",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "report posts",
+    "response": {
+      "status": 400,
+      "error": "account_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-REP-004",
+    "endpoint": "/api/report_pins",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "report pins",
+    "response": {
+      "status": 400,
+      "error": "account_id is required.",
+      "code": "missing_param"
+    }
+  }
+]

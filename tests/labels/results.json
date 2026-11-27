@@ -1,0 +1,56 @@
+[
+  {
+    "id": "TC-LBL-001",
+    "endpoint": "/api/label_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "label list",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "colors": [
+        "blue",
+        "emerald",
+        "amber",
+        "rose",
+        "violet",
+        "cyan",
+        "slate",
+        "lime"
+      ],
+      "labels": []
+    }
+  },
+  {
+    "id": "TC-LBL-002",
+    "endpoint": "/api/label_create",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "label create",
+    "response": {
+      "status": 200,
+      "message": "Label added.",
+      "label": {
+        "id": "TDoUo2cujIRmX1jK5EFF1Q==",
+        "name": "Test Label",
+        "color": "blue",
+        "description": ""
+      }
+    }
+  },
+  {
+    "id": "TC-LBL-004",
+    "endpoint": "/api/label_delete",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "label delete",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  }
+]

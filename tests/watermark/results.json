@@ -1,0 +1,46 @@
+[
+  {
+    "id": "TC-WM-001",
+    "endpoint": "/api/watermark_get",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "watermark get",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "settings": null,
+      "accounts": {
+        "total": 12,
+        "inheriting": 11,
+        "with_own_watermark": 1
+      }
+    }
+  },
+  {
+    "id": "TC-WM-002",
+    "endpoint": "/api/watermark_set",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "watermark set",
+    "response": {
+      "status": 400,
+      "error": "account_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-WM-003",
+    "endpoint": "/api/watermark_delete",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "watermark delete",
+    "response": {
+      "status": 400,
+      "error": "account_id is required.",
+      "code": "missing_param"
+    }
+  }
+]

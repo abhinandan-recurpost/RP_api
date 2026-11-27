@@ -1,0 +1,41 @@
+[
+  {
+    "id": "TC-HG-001",
+    "endpoint": "/api/hashtag_groups_list",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "hashtag groups list",
+    "response": {
+      "status": 400,
+      "error": "library_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-HG-002",
+    "endpoint": "/api/hashtag_groups_add",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "hashtag group add",
+    "response": {
+      "status": 400,
+      "error": "library_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-HG-004",
+    "endpoint": "/api/hashtag_groups_delete",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "hashtag group delete",
+    "response": {
+      "status": 400,
+      "error": "library_id is required.",
+      "code": "missing_param"
+    }
+  }
+]

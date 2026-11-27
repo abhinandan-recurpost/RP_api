@@ -1,0 +1,224 @@
+[
+  {
+    "id": "EDGE-001",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "empty string title",
+    "response": {
+      "status": 400,
+      "error": "title is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "EDGE-002",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "null title",
+    "response": {
+      "status": 400,
+      "error": "title is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "EDGE-003",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "very long title >255 chars",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "EDGE-004",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "SQL injection in title",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "EDGE-005",
+    "endpoint": "/api/inbox_reply_comment",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "XSS in comment text",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "EDGE-006",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "unicode emoji in message",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "EDGE-007",
+    "endpoint": "/api/schedule_create",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "schedule date in past",
+    "response": {
+      "status": 400,
+      "error": "library_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "EDGE-008",
+    "endpoint": "/api/schedule_create",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "schedule date far future >1 year",
+    "response": {
+      "status": 400,
+      "error": "library_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "EDGE-019",
+    "endpoint": "/api/workspace_list",
+    "status": 200,
+    "expected": 429,
+    "pass": false,
+    "note": "rate limiting 100 req/min",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "workspace_list": [
+        {
+          "ws_id": "MlWlT6qeem2MMkIW8mWYmg==",
+          "ws_name": "My Workspace",
+          "is_default": 1,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "mnCkYKT+a8wM51bBC/lOzg==",
+          "ws_name": "API Caller test",
+          "is_default": 0,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "/TJ36aWo/78goCOY6n0gOQ==",
+          "ws_name": "Faces",
+          "is_default": 0,
+          "ownership": "own",
+          "owner_paused": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "EDGE-021",
+    "endpoint": "/api/user_login",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "malformed JSON",
+    "response": {
+      "status": 400,
+      "error": "The request body is not valid JSON.",
+      "code": "invalid_json"
+    }
+  },
+  {
+    "id": "EDGE-022",
+    "endpoint": "/api/workspace_list",
+    "status": 200,
+    "expected": 400,
+    "pass": false,
+    "note": "missing Content-Type header",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "workspace_list": [
+        {
+          "ws_id": "MlWlT6qeem2MMkIW8mWYmg==",
+          "ws_name": "My Workspace",
+          "is_default": 1,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "mnCkYKT+a8wM51bBC/lOzg==",
+          "ws_name": "API Caller test",
+          "is_default": 0,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "/TJ36aWo/78goCOY6n0gOQ==",
+          "ws_name": "Faces",
+          "is_default": 0,
+          "ownership": "own",
+          "owner_paused": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "EDGE-024",
+    "endpoint": "/api/workspace_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "extra unknown fields in body",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "workspace_list": [
+        {
+          "ws_id": "MlWlT6qeem2MMkIW8mWYmg==",
+          "ws_name": "My Workspace",
+          "is_default": 1,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "mnCkYKT+a8wM51bBC/lOzg==",
+          "ws_name": "API Caller test",
+          "is_default": 0,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "/TJ36aWo/78goCOY6n0gOQ==",
+          "ws_name": "Faces",
+          "is_default": 0,
+          "ownership": "own",
+          "owner_paused": 0
+        }
+      ]
+    }
+  }
+]

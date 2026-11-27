@@ -1,0 +1,68 @@
+[
+  {
+    "id": "TC-DM-001",
+    "endpoint": "/api/dm_automation_accounts",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "dm automation accounts",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "accounts": [
+        {
+          "id": "3/Ex5eRQYjU2UMGgZ+zt1w==",
+          "name": "steffen__heree",
+          "network": "instagram",
+          "status": "active",
+          "automation_count": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "TC-DM-003",
+    "endpoint": "/api/dm_automation_list",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "dm automation list",
+    "response": {
+      "status": 400,
+      "error": "account_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-DM-005",
+    "endpoint": "/api/dm_automation_stats",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "dm automation stats",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "from_date": "2026-10-28",
+      "to_date": "2026-11-27",
+      "group_by": "day",
+      "rows": [],
+      "totals": {
+        "dm_sent": 0,
+        "comment_reply_sent": 0,
+        "non_follower_reply_sent": 0,
+        "consent_dm_sent": 0,
+        "consent_follower_dm_sent": 0,
+        "consent_non_follower_dm_sent": 0,
+        "consent_expired": 0,
+        "follower_detected": 0,
+        "non_follower_detected": 0,
+        "consent_error": 0,
+        "opening_dm_sent": 0,
+        "cta_response_received": 0,
+        "unfollower_dm_sent": 0,
+        "cta_loop_completed": 0
+      }
+    }
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "id": "TC-ACC-001",
+    "endpoint": "/api/account_details",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "owner account details",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "account": {
+        "id": "yFwdgp/x4CeZtH1oue1CLw==",
+        "name": "Abhinandan Tiwari",
+        "email": "abhinandan@recurrpost.com",
+        "timezone": "Asia/Kolkata",
+        "plan": "Admin",
+        "default_workspace_id": "MlWlT6qeem2MMkIW8mWYmg==",
+        "member_since": "2026-08-07",
+        "queue": {
+          "status": "running",
+          "resume_at": ""
+        }
+      }
+    }
+  },
+  {
+    "id": "TC-ACC-002",
+    "endpoint": "/api/account_timezone",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "account timezone",
+    "response": {
+      "status": 400,
+      "error": "timezone must be an IANA zone name such as America/New_York.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-ACC-005",
+    "endpoint": "/api/account_limits",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "account limits",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "plan": "Admin",
+      "limits": {
+        "social_accounts": {
+          "used": 12,
+          "limit": 30
+        },
+        "library_content": {
+          "used": 50,
+          "limit": 100000
+        },
+        "feeds": {
+          "used": 0,
+          "limit": 30
+        },
+        "schedules": {
+          "used": 1,
+          "limit": 20
+        },
+        "team_members": {
+          "used": 3,
+          "limit": 10
+        },
+        "storage": {
+          "used_bytes": 0,
+          "limit_bytes": 536870912000,
+          "limit_gb": 500,
+          "percent_used": 0,
+          "extra_storage_units": 0,
+          "last_checked_at": ""
+        },
+        "posts_per_day": {
+          "limit": 220,
+          "date": "2026-11-27",
+          "accounts": [
+            {
+              "account_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+              "name": "Abhinandan Tiwari",
+              "network": "twitter",
+              "status": "active",
+              "used": 2,
+              "remaining": 218
+            },
+            {
+              "account_id": "iL/UELNkkC3tFDqlJTRwxw==",
+              "name": "dl91",
+              "network": "linkedin",
+              "status": "active",
+              "used": 0,
+              "remaining": 220
+            },
+            {
+              "account_id": "eGy28zCzs37vnGzM6d0DEw==",
+              "name": "mbapu.bsky.social",
+              "network": "bluesky",
+              "status": "active",
+              "used": 0,
+              "remaining": 220
+            },
+            {
+              "account_id": "Zx+/8rcGyhQ6gLuUczqkAA==",
+              "name": "Steeve Roggers",
+              "network": "youtube",
+              "status": "active",
+              "used": 0,
+              "remaining": 220
+            },
+            {
+              "account_id": "EvXDdEB8AgADUkOOvAwKIg==",
+              "name": "Steeve Roggers",
+              "network": "linkedin",
+              "status": "active",
+              "used": 0,
+              "remaining": 220
+            },
+            {
+              "account_id": "jA7Q1yF07HwlvJuo5xgkTg==",
+              "name": "steeve23fg",
+              "network": "tiktok",
+              "status": "active",
+              "used": 0,
+              "remaining": 220
+            },
+            {
+              "account_id": "0uOo2WQvrGnDbDGBuT7nFA==",
+              "name": "Steffen Fitnes",
+              "network": "facebook",
+              "status": "active",
+              "used": 1,
+              "remaining": 219
+            },
+            {
+              "account_id": "uR7goHC/+p/MZ0W8WS8QsA==",
+              "name": "Steffen John",
+              "network": "facebook",
+              "status": "active",
+              "used": 0,
+              "remaining": 220
+            },
+            {
+              "account_id": "RMc910GxXVUdU6RAw0K5Fw==",
+              "name": "steffen__here",
+              "network": "threads",
+              "status": "active",
+              "used": 0,
+              "remaining": 220
+            },
+            {
+              "account_id": "3/Ex5eRQYjU2UMGgZ+zt1w==",
+              "name": "steffen__heree",
+              "network": "instagram",
+              "status": "active",
+              "used": 0,
+              "remaining": 220
+            },
+            {
+              "account_id": "zaSAXjAaiJuJLJMkxFogKg==",
+              "name": "weir.dshakshi/",
+              "network": "instagram",
+              "status": "active",
+              "used": 0,
+              "remaining": 220
+            },
+            {
+              "account_id": "WbcSnzn45Q1drz+8XeNsJA==",
+              "name": "yapper",
+              "network": "pinterest",
+              "status": "active",
+              "used": 0,
+              "remaining": 220
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "id": "TC-ACC-006",
+    "endpoint": "/api/plan_details",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "plan details",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "plan": {
+        "name": "Admin",
+        "billing_cycle": "other",
+        "source": "web",
+        "status": "active",
+        "is_trial": false,
+        "ends_at": "",
+        "features": {
+          "reports": true,
+          "dm_automation": true
+        },
+        "limits": {
+          "social_accounts": 30,
+          "posts_per_day": 220,
+          "one_off_posts": 200,
+          "schedules": 20,
+          "feeds": 30,
+          "team_members": 10,
+          "recurring_posts": 100000,
+          "ai_posts": 20,
+          "shareable_calendars": 3,
+          "storage_gb": 500
+        }
+      }
+    }
+  },
+  {
+    "id": "TC-ACC-008",
+    "endpoint": "/api/queue_pause",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "pause queue",
+    "response": {
+      "status": 200,
+      "message": "Queue paused."
+    }
+  },
+  {
+    "id": "TC-ACC-009",
+    "endpoint": "/api/queue_resume",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "resume queue",
+    "response": {
+      "status": 200,
+      "message": "Queue resumed."
+    }
+  },
+  {
+    "id": "TC-ACC-010",
+    "endpoint": "/api/x_wallet",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "wallet balance",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "wallet": {
+        "balance_usd": 2.81,
+        "posts_remaining": 14,
+        "low_balance_threshold_usd": 10,
+        "cost_per_post_usd": 0.2,
+        "topup_packs": [
+          {
+            "sku": "twitter-wallet-credits-10",
+            "price_usd": 10.8,
+            "credit_usd": 10
+          },
+          {
+            "sku": "twitter-wallet-credits-25",
+            "price_usd": 27,
+            "credit_usd": 25
+          },
+          {
+            "sku": "twitter-url-credits",
+            "price_usd": 108,
+            "credit_usd": 100
+          }
+        ]
+      },
+      "permit_repeated_tweets": false,
+      "is_owner": true,
+      "transactions": {
+        "items": [
+          {
+            "type": "debit",
+            "amount_usd": 0.2,
+            "balance_after_usd": 2.81,
+            "note": "Tweet attempt - sent",
+            "date": "2026-11-23 12:38:38"
+          },
+          {
+            "type": "credit",
+            "amount_usd": 3,
+            "balance_after_usd": 3.01,
+            "note": "Manual credit by admin (admrecurpost)",
+            "date": "2026-11-23 12:38:04"
+          },
+          {
+            "type": "debit",
+            "amount_usd": 0.2,
+            "balance_after_usd": 0.01,
+            "note": "Tweet attempt - sent",
+            "date": "2026-10-05 13:59:55"
+          },
+          {
+            "type": "credit",
+            "amount_usd": 0,
+            "balance_after_usd": 0.21,
+            "note": "Manual credit by admin (abhinandan)",
+            "date": "2026-10-05 13:55:35"
+          },
+          {
+            "type": "credit",
+            "amount_usd": 0.01,
+            "balance_after_usd": 0.21,
+            "note": "Manual credit by admin (abhinandan)",
+            "date": "2026-10-05 13:55:20"
+          },
+          {
+            "type": "credit",
+            "amount_usd": 0.2,
+            "balance_after_usd": 0.2,
+            "note": "Manual credit by admin (abhinandan)",
+            "date": "2026-10-05 13:54:59"
+          }
+        ],
+        "total": 6,
+        "page": 1,
+        "per_page": 20,
+        "total_pages": 1
+      }
+    }
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "TC-SH-001",
+    "endpoint": "/api/shortener_accounts_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "shortener accounts list",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "shorteners": [],
+      "attached": []
+    }
+  },
+  {
+    "id": "TC-SH-002",
+    "endpoint": "/api/shortener_accounts_attach",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "shortener attach",
+    "response": {
+      "status": 400,
+      "error": "account_ids is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-SH-003",
+    "endpoint": "/api/shortener_accounts_detach",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "shortener detach",
+    "response": {
+      "status": 400,
+      "error": "account_ids is required.",
+      "code": "missing_param"
+    }
+  }
+]

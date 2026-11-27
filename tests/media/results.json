@@ -1,0 +1,118 @@
+[
+  {
+    "id": "TC-MED-001",
+    "endpoint": "/api/media_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "media list",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "page": 1,
+      "per_page": 20,
+      "items": [
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786090986_6a7595ea656e7.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786091054_6a75962e650ee.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786090986_6a7595ea66f19.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786091065_6a75963941c7e.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786090986_6a7595ea67408.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786091066_6a75963a2ad9a.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786098055_6a75b1871d1c7.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786098127_6a75b1cf9e1a7.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786098055_6a75b1871f614.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786098148_6a75b1e47f807.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786098055_6a75b1871fdd8.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786098149_6a75b1e57d3d9.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786098055_6a75b18720552.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786098150_6a75b1e684842.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786098055_6a75b18720c0f.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786098151_6a75b1e77b537.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786098055_6a75b187215ae.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786098152_6a75b1e86cc1a.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786098055_6a75b1872252e.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786098153_6a75b1e99951a.png"
+        },
+        {
+          "type": "image",
+          "url": "https://mediadev.recurpost.com/test_user_19931/images/1786098055_6a75b1872326d.png",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/images/1786098055_6a75b1872326d.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786090986_6a7595ea677cd.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786091067_6a75963b03fcb.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786090986_6a7595ea67b61.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786091067_6a75963bee633.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786090986_6a7595ea67eee.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786091068_6a75963c8045e.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786090986_6a7595ea68473.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786091069_6a75963d6d83b.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786523476_6a7c2f54173a9.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786523495_6a7c2f67399a9.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786523505_6a7c2f7175fe7.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786523520_6a7c2f80d2674.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786523532_6a7c2f8c01859.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786523544_6a7c2f988393d.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786523540_6a7c2f94227c1.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786523557_6a7c2fa5e007c.png"
+        },
+        {
+          "type": "video",
+          "url": "https://mediadev.recurpost.com/test_user_19931/video/1786523561_6a7c2fa99e127.mp4",
+          "thumbnail": "https://mediadev.recurpost.com/test_user_19931/video_thumb/19931_1786523581_6a7c2fbd1e814.png"
+        }
+      ]
+    }
+  }
+]

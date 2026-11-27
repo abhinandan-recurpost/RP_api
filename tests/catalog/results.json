@@ -1,0 +1,41 @@
+[
+  {
+    "id": "TC-CAT-001",
+    "endpoint": "/api/catalog_businesses",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "catalog businesses",
+    "response": {
+      "status": 400,
+      "error": "account_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-CAT-002",
+    "endpoint": "/api/catalog_product_save",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "catalog product save",
+    "response": {
+      "status": 400,
+      "error": "account_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-CAT-003",
+    "endpoint": "/api/catalog_product_delete",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "catalog product delete",
+    "response": {
+      "status": 400,
+      "error": "account_id is required.",
+      "code": "missing_param"
+    }
+  }
+]

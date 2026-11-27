@@ -1,0 +1,643 @@
+[
+  {
+    "id": "TC-SCH-001",
+    "endpoint": "/api/schedule_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "schedule list",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "schedules": [
+        {
+          "id": "fLn8ar9hCqHefRBMPzGbUA==",
+          "library": {
+            "id": "CiSQYpwzyP5hOmrj784AsQ==",
+            "name": "PR3627 Fix Verify"
+          },
+          "account": {
+            "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+            "name": "Steffen Fitnes",
+            "network": "facebook"
+          },
+          "frequency": "weekly",
+          "day": 1,
+          "time": "15:00",
+          "best_time": false,
+          "week_of_month": 0
+        },
+        {
+          "id": "qzJJj9rWrdh/vE/6VAPSmw==",
+          "library": {
+            "id": "CiSQYpwzyP5hOmrj784AsQ==",
+            "name": "PR3627 Fix Verify"
+          },
+          "account": {
+            "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+            "name": "Abhinandan Tiwari",
+            "network": "twitter"
+          },
+          "frequency": "weekly",
+          "day": 1,
+          "time": "15:00",
+          "best_time": false,
+          "week_of_month": 0
+        },
+        {
+          "id": "8UWoHxqcGx4GQ+QA0Ht3Dg==",
+          "library": {
+            "id": "CiSQYpwzyP5hOmrj784AsQ==",
+            "name": "PR3627 Fix Verify"
+          },
+          "account": {
+            "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+            "name": "Steffen Fitnes",
+            "network": "facebook"
+          },
+          "frequency": "weekly",
+          "day": 2,
+          "time": "15:00",
+          "best_time": false,
+          "week_of_month": 0
+        },
+        {
+          "id": "TdN2gRP0H88yMAI1OXY8Ew==",
+          "library": {
+            "id": "CiSQYpwzyP5hOmrj784AsQ==",
+            "name": "PR3627 Fix Verify"
+          },
+          "account": {
+            "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+            "name": "Abhinandan Tiwari",
+            "network": "twitter"
+          },
+          "frequency": "weekly",
+          "day": 2,
+          "time": "15:00",
+          "best_time": false,
+          "week_of_month": 0
+        },
+        {
+          "id": "3NrRqc5x3k0W1H0hwVBADQ==",
+          "library": {
+            "id": "CiSQYpwzyP5hOmrj784AsQ==",
+            "name": "PR3627 Fix Verify"
+          },
+          "account": {
+            "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+            "name": "Steffen Fitnes",
+            "network": "facebook"
+          },
+          "frequency": "weekly",
+          "day": 3,
+          "time": "15:00",
+          "best_time": false,
+          "week_of_month": 0
+        },
+        {
+          "id": "Hf3hckOr/Tz+tqiNdBj8pg==",
+          "library": {
+            "id": "CiSQYpwzyP5hOmrj784AsQ==",
+            "name": "PR3627 Fix Verify"
+          },
+          "account": {
+            "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+            "name": "Abhinandan Tiwari",
+            "network": "twitter"
+          },
+          "frequency": "weekly",
+          "day": 3,
+          "time": "15:00",
+          "best_time": false,
+          "week_of_month": 0
+        },
+        {
+          "id": "RoutN0lg7CkpxZELTo5grQ==",
+          "library": {
+            "id": "CiSQYpwzyP5hOmrj784AsQ==",
+            "name": "PR3627 Fix Verify"
+          },
+          "account": {
+            "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+            "name": "Steffen Fitnes",
+            "network": "facebook"
+          },
+          "frequency": "weekly",
+          "day": 4,
+          "time": "15:00",
+          "best_time": false,
+          "week_of_month": 0
+        },
+        {
+          "id": "VwqF3UTNVWIJQutF//7uUA==",
+          "library": {
+            "id": "CiSQYpwzyP5hOmrj784AsQ==",
+            "name": "PR3627 Fix Verify"
+          },
+          "account": {
+            "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+            "name": "Abhinandan Tiwari",
+            "network": "twitter"
+          },
+          "frequency": "weekly",
+          "day": 4,
+          "time": "15:00",
+          "best_time": false,
+          "week_of_month": 0
+        },
+        {
+          "id": "R9KNhHApxqWpCHVQEN2ZqQ==",
+          "library": {
+            "id": "CiSQYpwzyP5hOmrj784AsQ==",
+            "name": "PR3627 Fix Verify"
+          },
+          "account": {
+            "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+            "name": "Steffen Fitnes",
+            "network": "facebook"
+          },
+          "frequency": "weekly",
+          "day": 5,
+          "time": "15:00",
+          "best_time": false,
+          "week_of_month": 0
+        },
+        {
+          "id": "zfGitCnAvRgGCaRdMXdIYg==",
+          "library": {
+            "id": "CiSQYpwzyP5hOmrj784AsQ==",
+            "name": "PR3627 Fix Verify"
+          },
+          "account": {
+            "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+            "name": "Abhinandan Tiwari",
+            "network": "twitter"
+          },
+          "frequency": "weekly",
+          "day": 5,
+          "time": "15:00",
+          "best_time": false,
+          "week_of_month": 0
+        },
+        {
+          "id": "TP/6AiKvEzxwKBBaq4vLeQ==",
+          "library": {
+            "id": "CiSQYpwzyP5hOmrj784AsQ==",
+            "name": "PR3627 Fix Verify"
+          },
+          "account": {
+            "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+            "name": "Steffen Fitnes",
+            "network": "facebook"
+          },
+          "frequency": "weekly",
+          "day": 6,
+          "time": "15:00",
+          "best_time": false,
+          "week_of_month": 0
+        },
+        {
+          "id": "sDaHBhvyT54FR2T1tXaUQw==",
+          "library": {
+            "id": "CiSQYpwzyP5hOmrj784AsQ==",
+            "name": "PR3627 Fix Verify"
+          },
+          "account": {
+            "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+            "name": "Abhinandan Tiwari",
+            "network": "twitter"
+          },
+          "frequency": "weekly",
+          "day": 6,
+          "time": "15:00",
+          "best_time": false,
+          "week_of_month": 0
+        },
+        {
+          "id": "GCxD3WGW7L4P2X9KjOU4Ig==",
+          "library": {
+            "id": "CiSQYpwzyP5hOmrj784AsQ==",
+            "name": "PR3627 Fix Verify"
+          },
+          "account": {
+            "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+            "name": "Steffen Fitnes",
+            "network": "facebook"
+          },
+          "frequency": "weekly",
+          "day": 7,
+          "time": "15:00",
+          "best_time": false,
+          "week_of_month": 0
+        },
+        {
+          "id": "ykunQQbEeXNjvvL4lhX+mQ==",
+          "library": {
+            "id": "CiSQYpwzyP5hOmrj784AsQ==",
+            "name": "PR3627 Fix Verify"
+          },
+          "account": {
+            "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+            "name": "Abhinandan Tiwari",
+            "network": "twitter"
+          },
+          "frequency": "weekly",
+          "day": 7,
+          "time": "15:00",
+          "best_time": false,
+          "week_of_month": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "TC-SCH-002",
+    "endpoint": "/api/schedule_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "schedule create valid",
+    "response": {
+      "status": 400,
+      "error": "library_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-SCH-006",
+    "endpoint": "/api/schedule_calendar",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "schedule calendar",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "frequency": "weekly",
+      "total_slots": 14,
+      "days": [
+        {
+          "day": 1,
+          "slots": [
+            {
+              "id": "fLn8ar9hCqHefRBMPzGbUA==",
+              "library": {
+                "id": "CiSQYpwzyP5hOmrj784AsQ==",
+                "name": "PR3627 Fix Verify"
+              },
+              "account": {
+                "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+                "name": "Steffen Fitnes",
+                "network": "facebook"
+              },
+              "frequency": "weekly",
+              "day": 1,
+              "time": "15:00",
+              "best_time": false,
+              "week_of_month": 0
+            },
+            {
+              "id": "qzJJj9rWrdh/vE/6VAPSmw==",
+              "library": {
+                "id": "CiSQYpwzyP5hOmrj784AsQ==",
+                "name": "PR3627 Fix Verify"
+              },
+              "account": {
+                "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+                "name": "Abhinandan Tiwari",
+                "network": "twitter"
+              },
+              "frequency": "weekly",
+              "day": 1,
+              "time": "15:00",
+              "best_time": false,
+              "week_of_month": 0
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "slots": [
+            {
+              "id": "8UWoHxqcGx4GQ+QA0Ht3Dg==",
+              "library": {
+                "id": "CiSQYpwzyP5hOmrj784AsQ==",
+                "name": "PR3627 Fix Verify"
+              },
+              "account": {
+                "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+                "name": "Steffen Fitnes",
+                "network": "facebook"
+              },
+              "frequency": "weekly",
+              "day": 2,
+              "time": "15:00",
+              "best_time": false,
+              "week_of_month": 0
+            },
+            {
+              "id": "TdN2gRP0H88yMAI1OXY8Ew==",
+              "library": {
+                "id": "CiSQYpwzyP5hOmrj784AsQ==",
+                "name": "PR3627 Fix Verify"
+              },
+              "account": {
+                "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+                "name": "Abhinandan Tiwari",
+                "network": "twitter"
+              },
+              "frequency": "weekly",
+              "day": 2,
+              "time": "15:00",
+              "best_time": false,
+              "week_of_month": 0
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "slots": [
+            {
+              "id": "3NrRqc5x3k0W1H0hwVBADQ==",
+              "library": {
+                "id": "CiSQYpwzyP5hOmrj784AsQ==",
+                "name": "PR3627 Fix Verify"
+              },
+              "account": {
+                "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+                "name": "Steffen Fitnes",
+                "network": "facebook"
+              },
+              "frequency": "weekly",
+              "day": 3,
+              "time": "15:00",
+              "best_time": false,
+              "week_of_month": 0
+            },
+            {
+              "id": "Hf3hckOr/Tz+tqiNdBj8pg==",
+              "library": {
+                "id": "CiSQYpwzyP5hOmrj784AsQ==",
+                "name": "PR3627 Fix Verify"
+              },
+              "account": {
+                "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+                "name": "Abhinandan Tiwari",
+                "network": "twitter"
+              },
+              "frequency": "weekly",
+              "day": 3,
+              "time": "15:00",
+              "best_time": false,
+              "week_of_month": 0
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "slots": [
+            {
+              "id": "RoutN0lg7CkpxZELTo5grQ==",
+              "library": {
+                "id": "CiSQYpwzyP5hOmrj784AsQ==",
+                "name": "PR3627 Fix Verify"
+              },
+              "account": {
+                "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+                "name": "Steffen Fitnes",
+                "network": "facebook"
+              },
+              "frequency": "weekly",
+              "day": 4,
+              "time": "15:00",
+              "best_time": false,
+              "week_of_month": 0
+            },
+            {
+              "id": "VwqF3UTNVWIJQutF//7uUA==",
+              "library": {
+                "id": "CiSQYpwzyP5hOmrj784AsQ==",
+                "name": "PR3627 Fix Verify"
+              },
+              "account": {
+                "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+                "name": "Abhinandan Tiwari",
+                "network": "twitter"
+              },
+              "frequency": "weekly",
+              "day": 4,
+              "time": "15:00",
+              "best_time": false,
+              "week_of_month": 0
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "slots": [
+            {
+              "id": "R9KNhHApxqWpCHVQEN2ZqQ==",
+              "library": {
+                "id": "CiSQYpwzyP5hOmrj784AsQ==",
+                "name": "PR3627 Fix Verify"
+              },
+              "account": {
+                "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+                "name": "Steffen Fitnes",
+                "network": "facebook"
+              },
+              "frequency": "weekly",
+              "day": 5,
+              "time": "15:00",
+              "best_time": false,
+              "week_of_month": 0
+            },
+            {
+              "id": "zfGitCnAvRgGCaRdMXdIYg==",
+              "library": {
+                "id": "CiSQYpwzyP5hOmrj784AsQ==",
+                "name": "PR3627 Fix Verify"
+              },
+              "account": {
+                "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+                "name": "Abhinandan Tiwari",
+                "network": "twitter"
+              },
+              "frequency": "weekly",
+              "day": 5,
+              "time": "15:00",
+              "best_time": false,
+              "week_of_month": 0
+            }
+          ]
+        },
+        {
+          "day": 6,
+          "slots": [
+            {
+              "id": "TP/6AiKvEzxwKBBaq4vLeQ==",
+              "library": {
+                "id": "CiSQYpwzyP5hOmrj784AsQ==",
+                "name": "PR3627 Fix Verify"
+              },
+              "account": {
+                "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+                "name": "Steffen Fitnes",
+                "network": "facebook"
+              },
+              "frequency": "weekly",
+              "day": 6,
+              "time": "15:00",
+              "best_time": false,
+              "week_of_month": 0
+            },
+            {
+              "id": "sDaHBhvyT54FR2T1tXaUQw==",
+              "library": {
+                "id": "CiSQYpwzyP5hOmrj784AsQ==",
+                "name": "PR3627 Fix Verify"
+              },
+              "account": {
+                "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+                "name": "Abhinandan Tiwari",
+                "network": "twitter"
+              },
+              "frequency": "weekly",
+              "day": 6,
+              "time": "15:00",
+              "best_time": false,
+              "week_of_month": 0
+            }
+          ]
+        },
+        {
+          "day": 7,
+          "slots": [
+            {
+              "id": "GCxD3WGW7L4P2X9KjOU4Ig==",
+              "library": {
+                "id": "CiSQYpwzyP5hOmrj784AsQ==",
+                "name": "PR3627 Fix Verify"
+              },
+              "account": {
+                "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+                "name": "Steffen Fitnes",
+                "network": "facebook"
+              },
+              "frequency": "weekly",
+              "day": 7,
+              "time": "15:00",
+              "best_time": false,
+              "week_of_month": 0
+            },
+            {
+              "id": "ykunQQbEeXNjvvL4lhX+mQ==",
+              "library": {
+                "id": "CiSQYpwzyP5hOmrj784AsQ==",
+                "name": "PR3627 Fix Verify"
+              },
+              "account": {
+                "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+                "name": "Abhinandan Tiwari",
+                "network": "twitter"
+              },
+              "frequency": "weekly",
+              "day": 7,
+              "time": "15:00",
+              "best_time": false,
+              "week_of_month": 0
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "TC-SCH-008",
+    "endpoint": "/api/schedule_remaining",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "schedule remaining",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "daily_limit": 220,
+      "accounts": [
+        {
+          "id": "uR7goHC/+p/MZ0W8WS8QsA==",
+          "name": "Steffen John",
+          "network": "facebook",
+          "remaining": 220
+        },
+        {
+          "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+          "name": "Steffen Fitnes",
+          "network": "facebook",
+          "remaining": 219
+        },
+        {
+          "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+          "name": "Abhinandan Tiwari",
+          "network": "twitter",
+          "remaining": 218
+        },
+        {
+          "id": "EvXDdEB8AgADUkOOvAwKIg==",
+          "name": "Steeve Roggers",
+          "network": "linkedin",
+          "remaining": 220
+        },
+        {
+          "id": "iL/UELNkkC3tFDqlJTRwxw==",
+          "name": "dl91",
+          "network": "linkedin",
+          "remaining": 220
+        },
+        {
+          "id": "zaSAXjAaiJuJLJMkxFogKg==",
+          "name": "weir.dshakshi/",
+          "network": "instagram",
+          "remaining": 220
+        },
+        {
+          "id": "3/Ex5eRQYjU2UMGgZ+zt1w==",
+          "name": "steffen__heree",
+          "network": "instagram",
+          "remaining": 220
+        },
+        {
+          "id": "WbcSnzn45Q1drz+8XeNsJA==",
+          "name": "yapper",
+          "network": "pinterest",
+          "remaining": 220
+        },
+        {
+          "id": "jA7Q1yF07HwlvJuo5xgkTg==",
+          "name": "steeve23fg",
+          "network": "tiktok",
+          "remaining": 220
+        },
+        {
+          "id": "Zx+/8rcGyhQ6gLuUczqkAA==",
+          "name": "Steeve Roggers",
+          "network": "youtube",
+          "remaining": 220
+        },
+        {
+          "id": "RMc910GxXVUdU6RAw0K5Fw==",
+          "name": "steffen__here",
+          "network": "threads",
+          "remaining": 220
+        },
+        {
+          "id": "eGy28zCzs37vnGzM6d0DEw==",
+          "name": "mbapu.bsky.social",
+          "network": "bluesky",
+          "remaining": 220
+        }
+      ]
+    }
+  }
+]

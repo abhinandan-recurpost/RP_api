@@ -1,0 +1,289 @@
+[
+  {
+    "id": "BUG-XSS-001",
+    "endpoint": "/api/inbox_reply_comment",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "XSS payload 1 should be sanitized/stored safely",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "BUG-XSS-002",
+    "endpoint": "/api/inbox_reply_comment",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "XSS payload 2 should be sanitized/stored safely",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "BUG-XSS-003",
+    "endpoint": "/api/inbox_reply_comment",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "XSS payload 3 should be sanitized/stored safely",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "BUG-XSS-004",
+    "endpoint": "/api/inbox_reply_comment",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "XSS payload 4 should be sanitized/stored safely",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "BUG-SQLI-001",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "SQLi payload 1 should not cause server error",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "BUG-SQLI-002",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "SQLi payload 2 should not cause server error",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "BUG-SQLI-003",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "SQLi payload 3 should not cause server error",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "BUG-SQLI-004",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "SQLi payload 4 should not cause server error",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "BUG-OVERSIZE-001",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "10KB title should be rejected",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "BUG-MALFORMED-001",
+    "endpoint": "/api/workspace_list",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "Malformed JSON should return 400",
+    "response": {
+      "status": 400,
+      "error": "The request body is not valid JSON.",
+      "code": "invalid_json"
+    }
+  },
+  {
+    "id": "BUG-RATE-001",
+    "endpoint": "/api/workspace_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "No rate limiting (20 req) - potential DoS vector",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "workspace_list": [
+        {
+          "ws_id": "MlWlT6qeem2MMkIW8mWYmg==",
+          "ws_name": "My Workspace",
+          "is_default": 1,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "mnCkYKT+a8wM51bBC/lOzg==",
+          "ws_name": "API Caller test",
+          "is_default": 0,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "/TJ36aWo/78goCOY6n0gOQ==",
+          "ws_name": "Faces",
+          "is_default": 0,
+          "ownership": "own",
+          "owner_paused": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "BUG-UNICODE-001",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "Unicode should be handled safely",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "BUG-NULL-001",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "Null bytes in input should be rejected",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "BUG-NEGID-001",
+    "endpoint": "/api/workspace_details",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "Negative workspace ID should be rejected",
+    "response": {
+      "status": 400,
+      "error": "workspace_id is not a valid id. Get ids from /api/workspace_list.",
+      "code": "invalid_id"
+    }
+  },
+  {
+    "id": "BUG-NEGID-002",
+    "endpoint": "/api/workspace_details",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "Zero workspace ID should be rejected",
+    "response": {
+      "status": 400,
+      "error": "workspace_id is not a valid id. Get ids from /api/workspace_list.",
+      "code": "invalid_id"
+    }
+  },
+  {
+    "id": "BUG-EXTRAFIELD-001",
+    "endpoint": "/api/workspace_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "Extra unknown fields should be ignored (or rejected)",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "workspace_list": [
+        {
+          "ws_id": "MlWlT6qeem2MMkIW8mWYmg==",
+          "ws_name": "My Workspace",
+          "is_default": 1,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "mnCkYKT+a8wM51bBC/lOzg==",
+          "ws_name": "API Caller test",
+          "is_default": 0,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "/TJ36aWo/78goCOY6n0gOQ==",
+          "ws_name": "Faces",
+          "is_default": 0,
+          "ownership": "own",
+          "owner_paused": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "BUG-DUPKEY-001",
+    "endpoint": "/api/workspace_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "Empty body workspace_list should work",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "workspace_list": [
+        {
+          "ws_id": "MlWlT6qeem2MMkIW8mWYmg==",
+          "ws_name": "My Workspace",
+          "is_default": 1,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "mnCkYKT+a8wM51bBC/lOzg==",
+          "ws_name": "API Caller test",
+          "is_default": 0,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "/TJ36aWo/78goCOY6n0gOQ==",
+          "ws_name": "Faces",
+          "is_default": 0,
+          "ownership": "own",
+          "owner_paused": 0
+        }
+      ]
+    }
+  }
+]

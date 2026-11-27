@@ -1,0 +1,194 @@
+[
+  {
+    "id": "TC-AUTH-001",
+    "endpoint": "/api/user_login",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-AUTH-002",
+    "endpoint": "/api/user_login",
+    "status": 200,
+    "expected": 401,
+    "pass": false,
+    "note": ""
+  },
+  {
+    "id": "TC-AUTH-003",
+    "endpoint": "/api/user_login",
+    "status": 200,
+    "expected": 400,
+    "pass": false,
+    "note": ""
+  },
+  {
+    "id": "TC-AUTH-004",
+    "endpoint": "/api/user_login",
+    "status": 200,
+    "expected": 400,
+    "pass": false,
+    "note": ""
+  },
+  {
+    "id": "TC-WS-001",
+    "endpoint": "/api/workspace_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-WS-002",
+    "endpoint": "/api/workspace_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-WS-003",
+    "endpoint": "/api/workspace_details",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-WS-004",
+    "endpoint": "/api/workspace_details",
+    "status": 400,
+    "expected": 404,
+    "pass": false,
+    "note": ""
+  },
+  {
+    "id": "TC-WS-005",
+    "endpoint": "/api/workspace_details",
+    "status": 404,
+    "expected": 404,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-WS-009",
+    "endpoint": "/api/workspace_update",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-WS-010",
+    "endpoint": "/api/workspace_update",
+    "status": 403,
+    "expected": 403,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-WS-013",
+    "endpoint": "/api/workspace_clone",
+    "status": 403,
+    "expected": 403,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-WS-015",
+    "endpoint": "/api/workspace_delete",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-WS-016",
+    "endpoint": "/api/workspace_delete",
+    "status": 403,
+    "expected": 403,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-WS-017",
+    "endpoint": "/api/workspace_members",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-WS-018",
+    "endpoint": "/api/workspace_members",
+    "status": 404,
+    "expected": 404,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-WS-023",
+    "endpoint": "/api/workspace_member_update",
+    "status": 403,
+    "expected": 403,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-WS-025",
+    "endpoint": "/api/workspace_member_remove",
+    "status": 403,
+    "expected": 403,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-ROLE-001",
+    "endpoint": "/api/roles",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-ROLE-002",
+    "endpoint": "/api/roles",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-ROLE-004",
+    "endpoint": "/api/role_permissions",
+    "status": 200,
+    "expected": 400,
+    "pass": false,
+    "note": ""
+  },
+  {
+    "id": "TC-ROLE-005",
+    "endpoint": "/api/role_create",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-ROLE-012",
+    "endpoint": "/api/role_set_permissions",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": ""
+  },
+  {
+    "id": "TC-ROLE-013",
+    "endpoint": "/api/role_set_permissions",
+    "status": 200,
+    "expected": 403,
+    "pass": false,
+    "note": ""
+  }
+]

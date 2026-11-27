@@ -1,0 +1,44 @@
+[
+  {
+    "id": "TC-TT-001",
+    "endpoint": "/api/testimonial_templates_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "testimonial templates list",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "templates": [],
+      "total": 0,
+      "page": 1,
+      "per_page": 20
+    }
+  },
+  {
+    "id": "TC-TT-002",
+    "endpoint": "/api/testimonial_templates_add",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "testimonial template add",
+    "response": {
+      "status": 400,
+      "error": "image_url is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-TT-003",
+    "endpoint": "/api/testimonial_templates_delete",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "testimonial template delete",
+    "response": {
+      "status": 400,
+      "error": "template_id is not a valid id.",
+      "code": "invalid_id"
+    }
+  }
+]

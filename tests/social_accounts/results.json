@@ -1,0 +1,214 @@
+[
+  {
+    "id": "TC-SA-001",
+    "endpoint": "/api/social_account_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "owner lists social accounts",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "social_accounts": [
+        {
+          "smpa_id": "uR7goHC/+p/MZ0W8WS8QsA==",
+          "smpa_name": "Steffen John [Profile] (Facebook Profile)",
+          "status": "Connected",
+          "reconnect_url": "https://apptest.recurpost.com/exteranalconnectfacebookprofile/ajIxYWZNZz0/aW0xUWZNOD0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "smpa_id": "0uOo2WQvrGnDbDGBuT7nFA==",
+          "smpa_name": "Steffen Fitnes [Page] (Facebook Page)",
+          "status": "Connected",
+          "reconnect_url": "https://apptest.recurpost.com/exteranalconnectfacebookpage/ajIxYWZNZz0/aW0xUmU4Zz0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "smpa_id": "hg6bSe7ZXxKXOiiSE83AQw==",
+          "smpa_name": "Abhinandan Tiwari [Profile] (X (Twitter) Profile)",
+          "status": "Connected",
+          "reconnect_url": "https://apptest.recurpost.com/exteranalconnecttwitterprofile/ajIxYWZNZz0/aW0xUmU4az0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "smpa_id": "EvXDdEB8AgADUkOOvAwKIg==",
+          "smpa_name": "Steeve Roggers [Profile] (LinkedIn Profile)",
+          "status": "Connected",
+          "reconnect_url": "https://apptest.recurpost.com/exteranalconnectlinkedinprofile/ajIxYWZNZz0/aW0xUWZNND0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "smpa_id": "iL/UELNkkC3tFDqlJTRwxw==",
+          "smpa_name": "dl91 [Company] (LinkedIn Company)",
+          "status": "Connected",
+          "reconnect_url": "https://apptest.recurpost.com/exteranalconnectlinkedincompany/ajIxYWZNZz0/aW0xUmU4bz0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "smpa_id": "zaSAXjAaiJuJLJMkxFogKg==",
+          "smpa_name": "weir.dshakshi/ [Personal Profile] (Instagram Personal Profile)",
+          "status": "Connected",
+          "reconnect_url": "https://apptest.recurpost.com/exteranalconnectinstagramprofile/ajIxYWZNZz0/aW0xUWZNdz0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "smpa_id": "3/Ex5eRQYjU2UMGgZ+zt1w==",
+          "smpa_name": "steffen__heree [Business Profile] (Instagram Business Profile)",
+          "status": "Connected",
+          "reconnect_url": "https://apptest.recurpost.com/exteranalconnectinstagrambussinessprofile/ajIxYWZNZz0/aW0xUmVzcz0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "smpa_id": "WbcSnzn45Q1drz+8XeNsJA==",
+          "smpa_name": "yapper [Board] (Pinterest Board)",
+          "status": "Connected",
+          "reconnect_url": "https://apptest.recurpost.com/exteranalconnectpinterestboard/ajIxYWZNZz0/aW0xUWZNRT0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "smpa_id": "jA7Q1yF07HwlvJuo5xgkTg==",
+          "smpa_name": "steeve23fg [Profile] (TikTok Profile)",
+          "status": "Connected",
+          "reconnect_url": "https://apptest.recurpost.com/exteranalconnecttiktokprofile/ajIxYWZNZz0/aW0xUmQ4dz0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "smpa_id": "Zx+/8rcGyhQ6gLuUczqkAA==",
+          "smpa_name": "Steeve Roggers [Channel] (YouTube Channel)",
+          "status": "Connected",
+          "reconnect_url": "https://apptest.recurpost.com/exteranalconnectyoutubechannel/ajIxYWZNZz0/aW0xUmU4RT0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "smpa_id": "RMc910GxXVUdU6RAw0K5Fw==",
+          "smpa_name": "steffen__here [Profile] (MetaThreads Profile)",
+          "status": "Connected",
+          "reconnect_url": "https://apptest.recurpost.com/exteranalconnectthreadsprofile/ajIxYWZNZz0/aW0xUmU4QT0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "smpa_id": "eGy28zCzs37vnGzM6d0DEw==",
+          "smpa_name": "mbapu.bsky.social [Profile] (Bluesky Profile)",
+          "status": "Connected",
+          "reconnect_url": "https://apptest.recurpost.com/exteranalconnectblueskyprofile/ajIxYWZNZz0/aW0xUmVzaz0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        }
+      ]
+    }
+  },
+  {
+    "id": "TC-SA-002",
+    "endpoint": "/api/social_account_details",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "valid social account details",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-SA-003",
+    "endpoint": "/api/social_account_details",
+    "status": 400,
+    "expected": 404,
+    "pass": false,
+    "note": "invalid social account id",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-SA-004",
+    "endpoint": "/api/social_account_status",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "social account status",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-SA-007",
+    "endpoint": "/api/social_account_remove",
+    "status": 400,
+    "expected": 403,
+    "pass": false,
+    "note": "non-owner removes social account",
+    "response": {
+      "status": 400,
+      "error": "account_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-SA-008",
+    "endpoint": "/api/connect_social_account_urls",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "connect social account urls",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "social_links": [
+        {
+          "platform_name": "Facebook Profile",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnectfacebookprofile/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "platform_name": "Facebook Page",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnectfacebookpage/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "platform_name": "Facebook Group",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnectfacebookgroup/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "platform_name": "X (Twitter) Profile",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnecttwitterprofile/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "platform_name": "LinkedIn Profile",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnectlinkedinprofile/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "platform_name": "LinkedIn Company",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnectlinkedincompany/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "platform_name": "Instagram Personal Profile",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnectinstagramprofile/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "platform_name": "Pinterest Board",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnectpinterestboard/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "platform_name": "Google Business Profile",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnectgooglemybusiness/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "platform_name": "Instagram Business Profile (Facebook Login)",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnectinstagrambussinessprofile/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "platform_name": "Instagram Business Profile (Direct Login)",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnectinstagrambussinessprofiledirectlogin/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "platform_name": "TikTok Profile",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnecttiktokprofile/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "platform_name": "YouTube Channel",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnectyoutubechannel/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "platform_name": "Threads Profile",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnectthreadsprofile/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        },
+        {
+          "platform_name": "Bluesky Profile",
+          "connect_url": "https://apptest.recurpost.com/exteranalconnectblueskyprofile/ajIxYWZNZz0/0/ajIxYWZNZz0/ajJSUmV3PT0/anc9PQ"
+        }
+      ]
+    }
+  }
+]

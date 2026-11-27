@@ -1,0 +1,184 @@
+[
+  {
+    "id": "BUG-IDOR-001",
+    "endpoint": "/api/workspace_details",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "Writer should NOT access Owner workspace details",
+    "response": {
+      "status": 404,
+      "error": "Workspace not found or you do not have access to it.",
+      "code": "workspace_not_found"
+    }
+  },
+  {
+    "id": "BUG-IDOR-002",
+    "endpoint": "/api/workspace_details",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "Editor should NOT access Owner workspace details",
+    "response": {
+      "status": 404,
+      "error": "Workspace not found or you do not have access to it.",
+      "code": "workspace_not_found"
+    }
+  },
+  {
+    "id": "BUG-IDOR-003",
+    "endpoint": "/api/workspace_details",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "Publisher should NOT access Owner workspace details",
+    "response": {
+      "status": 404,
+      "error": "Workspace not found or you do not have access to it.",
+      "code": "workspace_not_found"
+    }
+  },
+  {
+    "id": "BUG-IDOR-004",
+    "endpoint": "/api/workspace_delete",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "Writer should NOT delete Owner workspace",
+    "response": {
+      "status": 404,
+      "error": "Workspace not found or you do not have access to it.",
+      "code": "workspace_not_found"
+    }
+  },
+  {
+    "id": "BUG-IDOR-005",
+    "endpoint": "/api/workspace_update",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "Writer should NOT update workspace settings",
+    "response": {
+      "status": 404,
+      "error": "Workspace not found or you do not have access to it.",
+      "code": "workspace_not_found"
+    }
+  },
+  {
+    "id": "BUG-IDOR-006",
+    "endpoint": "/api/workspace_clone",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "Writer should NOT clone workspace",
+    "response": {
+      "status": 404,
+      "error": "Workspace not found or you do not have access to it.",
+      "code": "workspace_not_found"
+    }
+  },
+  {
+    "id": "BUG-IDOR-007",
+    "endpoint": "/api/workspace_member_remove",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "Writer should NOT remove members",
+    "response": {
+      "status": 404,
+      "error": "Workspace not found or you do not have access to it.",
+      "code": "workspace_not_found"
+    }
+  },
+  {
+    "id": "BUG-IDOR-008",
+    "endpoint": "/api/workspace_members",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "Writer should NOT list members of workspace they don't own",
+    "response": {
+      "status": 404,
+      "error": "Workspace not found or you do not have access to it.",
+      "code": "workspace_not_found"
+    }
+  },
+  {
+    "id": "BUG-AUTH-001",
+    "endpoint": "/api/workspace_list",
+    "status": 401,
+    "expected": 401,
+    "pass": true,
+    "note": "Invalid token should return 401",
+    "response": {
+      "status": 401,
+      "error": "Invalid access token.",
+      "code": "token_invalid"
+    }
+  },
+  {
+    "id": "BUG-AUTH-002",
+    "endpoint": "/api/workspace_list",
+    "status": 401,
+    "expected": 401,
+    "pass": true,
+    "note": "Empty token should return 401",
+    "response": {
+      "status": 401,
+      "error": "emailid and api_key are required.",
+      "code": "credentials_required"
+    }
+  },
+  {
+    "id": "BUG-RBAC-001",
+    "endpoint": "/api/role_create",
+    "status": 409,
+    "expected": 200,
+    "pass": false,
+    "note": "Writer CAN create roles (feature)",
+    "response": {
+      "status": 409,
+      "error": "A role named \"SuperWriter\" already exists.",
+      "code": "conflict"
+    }
+  },
+  {
+    "id": "BUG-RBAC-003",
+    "endpoint": "/api/post_publish",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "Editor should NOT publish posts",
+    "response": {
+      "status": 404,
+      "error": "Unknown endpoint.",
+      "code": "endpoint_not_found"
+    }
+  },
+  {
+    "id": "BUG-RBAC-004",
+    "endpoint": "/api/post_approve",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "Writer should NOT approve posts",
+    "response": {
+      "status": 404,
+      "error": "Unknown endpoint.",
+      "code": "endpoint_not_found"
+    }
+  },
+  {
+    "id": "BUG-RBAC-005",
+    "endpoint": "/api/workspace_settings",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "Writer should NOT access workspace settings",
+    "response": {
+      "status": 404,
+      "error": "Unknown endpoint.",
+      "code": "endpoint_not_found"
+    }
+  }
+]

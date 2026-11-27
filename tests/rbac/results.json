@@ -1,0 +1,217 @@
+[
+  {
+    "id": "RBAC-001",
+    "endpoint": "/api/workspace_delete",
+    "status": 403,
+    "expected": 403,
+    "pass": true,
+    "note": "writer cannot delete workspace",
+    "response": {
+      "status": 403,
+      "error": "Only the workspace owner can do this.",
+      "code": "permission_denied"
+    }
+  },
+  {
+    "id": "RBAC-002",
+    "endpoint": "/api/workspace_member_remove",
+    "status": 403,
+    "expected": 403,
+    "pass": true,
+    "note": "writer cannot remove members",
+    "response": {
+      "status": 403,
+      "error": "Your role in this workspace does not allow this action (Remove members).",
+      "code": "permission_denied",
+      "permission": "remove-members"
+    }
+  },
+  {
+    "id": "RBAC-003",
+    "endpoint": "/api/workspace_update",
+    "status": 403,
+    "expected": 403,
+    "pass": true,
+    "note": "writer cannot update workspace settings",
+    "response": {
+      "status": 403,
+      "error": "Your role in this workspace does not allow this action (Workspace settings).",
+      "code": "permission_denied",
+      "permission": "workspace-settings"
+    }
+  },
+  {
+    "id": "RBAC-004",
+    "endpoint": "/api/workspace_clone",
+    "status": 403,
+    "expected": 403,
+    "pass": true,
+    "note": "writer cannot clone workspace",
+    "response": {
+      "status": 403,
+      "error": "Only the workspace owner can do this.",
+      "code": "permission_denied"
+    }
+  },
+  {
+    "id": "RBAC-005",
+    "endpoint": "/api/role_create",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "writer CAN create roles (feature)",
+    "response": {
+      "status": 200,
+      "message": "Role created.",
+      "role": {
+        "id": "xAfkJY9++ABVTwE17DE14A==",
+        "name": "TestRole",
+        "description": "Core content creator. Writes and edits posts, manages the content library, and handles customer replies in the inbox.",
+        "template": "writer",
+        "is_template": true,
+        "members": 0,
+        "permissions": [
+          "create-posts",
+          "delete-own",
+          "edit-others",
+          "inbox",
+          "inbox-reply",
+          "lib-upload",
+          "library"
+        ],
+        "notifications": {
+          "approved": {
+            "email": true,
+            "mobile": true
+          },
+          "assigned": {
+            "email": true,
+            "mobile": true
+          },
+          "changes": {
+            "email": true,
+            "mobile": true
+          }
+        },
+        "workflow_stages": []
+      }
+    }
+  },
+  {
+    "id": "RBAC-006",
+    "endpoint": "/api/role_set_permissions",
+    "status": 400,
+    "expected": 403,
+    "pass": false,
+    "note": "writer cannot escalate permissions",
+    "response": {
+      "status": 400,
+      "error": "role_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "RBAC-008",
+    "endpoint": "/api/post_publish",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "writer cannot publish posts",
+    "response": {
+      "status": 404,
+      "error": "Unknown endpoint.",
+      "code": "endpoint_not_found"
+    }
+  },
+  {
+    "id": "RBAC-009",
+    "endpoint": "/api/post_approve",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "writer cannot approve posts",
+    "response": {
+      "status": 404,
+      "error": "Unknown endpoint.",
+      "code": "endpoint_not_found"
+    }
+  },
+  {
+    "id": "RBAC-010",
+    "endpoint": "/api/workflow_send_client",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "writer cannot send to clients",
+    "response": {
+      "status": 404,
+      "error": "Unknown endpoint.",
+      "code": "endpoint_not_found"
+    }
+  },
+  {
+    "id": "RBAC-013",
+    "endpoint": "/api/post_publish",
+    "status": 404,
+    "expected": 200,
+    "pass": false,
+    "note": "publisher can publish posts",
+    "response": {
+      "status": 404,
+      "error": "Unknown endpoint.",
+      "code": "endpoint_not_found"
+    }
+  },
+  {
+    "id": "RBAC-014",
+    "endpoint": "/api/post_approve",
+    "status": 404,
+    "expected": 200,
+    "pass": false,
+    "note": "publisher can approve posts",
+    "response": {
+      "status": 404,
+      "error": "Unknown endpoint.",
+      "code": "endpoint_not_found"
+    }
+  },
+  {
+    "id": "RBAC-015",
+    "endpoint": "/api/workflow_send_client",
+    "status": 404,
+    "expected": 200,
+    "pass": false,
+    "note": "publisher can send to clients",
+    "response": {
+      "status": 404,
+      "error": "Unknown endpoint.",
+      "code": "endpoint_not_found"
+    }
+  },
+  {
+    "id": "RBAC-018",
+    "endpoint": "/api/post_approve",
+    "status": 404,
+    "expected": 200,
+    "pass": false,
+    "note": "editor can approve posts",
+    "response": {
+      "status": 404,
+      "error": "Unknown endpoint.",
+      "code": "endpoint_not_found"
+    }
+  },
+  {
+    "id": "RBAC-019",
+    "endpoint": "/api/post_edit",
+    "status": 404,
+    "expected": 200,
+    "pass": false,
+    "note": "editor can edit others posts",
+    "response": {
+      "status": 404,
+      "error": "Unknown endpoint.",
+      "code": "endpoint_not_found"
+    }
+  }
+]

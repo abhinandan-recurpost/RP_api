@@ -1,0 +1,41 @@
+[
+  {
+    "id": "TC-FEED-001",
+    "endpoint": "/api/feed_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "feed list",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "feeds": []
+    }
+  },
+  {
+    "id": "TC-FEED-002",
+    "endpoint": "/api/feed_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "feed create",
+    "response": {
+      "status": 400,
+      "error": "library_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-FEED-005",
+    "endpoint": "/api/feed_delete",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "feed delete",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  }
+]

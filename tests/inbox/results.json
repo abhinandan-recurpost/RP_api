@@ -1,0 +1,79 @@
+[
+  {
+    "id": "TC-INB-001",
+    "endpoint": "/api/inbox_accounts",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "inbox accounts",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "accounts": [
+        {
+          "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+          "name": "Steffen Fitnes",
+          "network": "facebook",
+          "status": "active",
+          "to_review_count": 0,
+          "last_synced_at": null
+        },
+        {
+          "id": "iL/UELNkkC3tFDqlJTRwxw==",
+          "name": "dl91",
+          "network": "linkedin",
+          "status": "active",
+          "to_review_count": 0,
+          "last_synced_at": null
+        },
+        {
+          "id": "3/Ex5eRQYjU2UMGgZ+zt1w==",
+          "name": "steffen__heree",
+          "network": "instagram",
+          "status": "active",
+          "to_review_count": 0,
+          "last_synced_at": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "TC-INB-002",
+    "endpoint": "/api/inbox_list",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "inbox list",
+    "response": {
+      "status": 400,
+      "error": "account_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-INB-007",
+    "endpoint": "/api/inbox_label_list",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "inbox label list",
+    "response": {
+      "status": 400,
+      "error": "account_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-INB-017",
+    "endpoint": "/api/inbox_like",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "inbox like",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  }
+]

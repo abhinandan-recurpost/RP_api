@@ -1,0 +1,694 @@
+[
+  {
+    "id": "TC-WF-001",
+    "endpoint": "/api/workflow_board",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "owner lists workflow board",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "has_workflow": true,
+      "workspaces": [
+        {
+          "id": "Ygz0YeO9J3oQoIHgUG7xXQ==",
+          "name": "API_Test_Workspace_Live",
+          "selected": true
+        },
+        {
+          "id": "m9q55mKFpYznTuPDXG/3Sg==",
+          "name": "Inbox API testing",
+          "selected": true
+        },
+        {
+          "id": "+r7DNyT6+A03N0MGkdFKfg==",
+          "name": "My Workspace",
+          "selected": true
+        },
+        {
+          "id": "i7sbOzhrqnBAgqmOqpX2yw==",
+          "name": "QA API Bugs",
+          "selected": true
+        },
+        {
+          "id": "E1zaqzCn+6Tl05ZmxxPi9w==",
+          "name": "zapier testing",
+          "selected": true
+        }
+      ],
+      "columns": [
+        {
+          "key": "ideas",
+          "name": "Ideas",
+          "type": "ideas",
+          "stage_id": "",
+          "color": "",
+          "cards": [
+            {
+              "id": "gSkZNb8vPIunUF1JLQ6/Fw==",
+              "kind": "idea",
+              "workspace_id": "m9q55mKFpYznTuPDXG/3Sg==",
+              "column": "ideas",
+              "stage_id": "",
+              "title": "Live Test Idea",
+              "description": "",
+              "platforms": [],
+              "account_ids": [],
+              "target_date": "",
+              "assignee": null,
+              "labels": [],
+              "media": [],
+              "status": "open",
+              "client_approval": true,
+              "urgent": false,
+              "source": "team",
+              "schedule": {
+                "count": 0,
+                "first_at": null
+              },
+              "post_id": "",
+              "created_by": {
+                "id": "xoq0ngqGmzziNuvs4Dx/Xw==",
+                "name": "ABHINANDAN TIWARIIII"
+              },
+              "created_at": "2026-11-27 08:07:34",
+              "updated_at": ""
+            }
+          ]
+        },
+        {
+          "key": "stage-wVhpdgPrCly8V5nUYppBlw==",
+          "name": "Design",
+          "type": "work",
+          "stage_id": "wVhpdgPrCly8V5nUYppBlw==",
+          "color": "blue",
+          "cards": [
+            {
+              "id": "M5WYrci6J8kjaOsfjGYL9g==",
+              "kind": "post",
+              "workspace_id": "i7sbOzhrqnBAgqmOqpX2yw==",
+              "column": "stage",
+              "stage_id": "wVhpdgPrCly8V5nUYppBlw==",
+              "title": "erberberberb",
+              "description": "erberberberb",
+              "platforms": [
+                "twitter"
+              ],
+              "account_ids": [
+                "Dnbr8LHr1Tf5k6fxvm0LkA=="
+              ],
+              "target_date": "",
+              "assignee": {
+                "id": "o6qk22MMFOMFDUsiLqZcGw==",
+                "name": "abhinandan+00"
+              },
+              "labels": [],
+              "media": [],
+              "status": "open",
+              "client_approval": true,
+              "urgent": false,
+              "source": "team",
+              "schedule": {
+                "count": 0,
+                "first_at": null
+              },
+              "post_id": "",
+              "created_by": {
+                "id": "xoq0ngqGmzziNuvs4Dx/Xw==",
+                "name": "ABHINANDAN TIWARIIII"
+              },
+              "created_at": "2026-11-18 10:49:03",
+              "updated_at": "2026-11-18 11:10:18"
+            }
+          ]
+        },
+        {
+          "key": "stage-Dhvc0tEgLhPDud1aufcYoA==",
+          "name": "VP",
+          "type": "work",
+          "stage_id": "Dhvc0tEgLhPDud1aufcYoA==",
+          "color": "teal",
+          "cards": []
+        },
+        {
+          "key": "stage-I/uhCFdGvxrPxCb7Wf3BXg==",
+          "name": "Re-Edit",
+          "type": "work",
+          "stage_id": "I/uhCFdGvxrPxCb7Wf3BXg==",
+          "color": "green",
+          "cards": [
+            {
+              "id": "g/v+RoiyPxnhi9rcW8MbpA==",
+              "kind": "post",
+              "workspace_id": "+r7DNyT6+A03N0MGkdFKfg==",
+              "column": "stage",
+              "stage_id": "I/uhCFdGvxrPxCb7Wf3BXg==",
+              "title": "ascdsvd",
+              "description": "ascdsvd",
+              "platforms": [
+                "facebook",
+                "twitter",
+                "linkedin"
+              ],
+              "account_ids": [
+                "6N2Y9H+1wn0tcA9rckq0QQ==",
+                "FTT+1dYsZu9P+BozOBBWFg==",
+                "Dnbr8LHr1Tf5k6fxvm0LkA==",
+                "qWX0y0kKlsLj4wCahQu+Pg=="
+              ],
+              "target_date": "",
+              "assignee": {
+                "id": "xoq0ngqGmzziNuvs4Dx/Xw==",
+                "name": "ABHINANDAN TIWARIIII"
+              },
+              "labels": [],
+              "media": [
+                {
+                  "url": "https://media.recurpost.com/user_124411/images/1793936757_6aed4d754d5a4.jpeg",
+                  "type": "image"
+                }
+              ],
+              "status": "open",
+              "client_approval": true,
+              "urgent": false,
+              "source": "team",
+              "schedule": {
+                "count": 0,
+                "first_at": null
+              },
+              "post_id": "",
+              "created_by": {
+                "id": "xoq0ngqGmzziNuvs4Dx/Xw==",
+                "name": "ABHINANDAN TIWARIIII"
+              },
+              "created_at": "2026-11-06 03:46:04",
+              "updated_at": "2026-11-06 03:46:18"
+            },
+            {
+              "id": "whSjeMaiSO3EKoYe6vYOhw==",
+              "kind": "post",
+              "workspace_id": "i7sbOzhrqnBAgqmOqpX2yw==",
+              "column": "stage",
+              "stage_id": "I/uhCFdGvxrPxCb7Wf3BXg==",
+              "title": "dfvefverberb",
+              "description": "dfvefverberb",
+              "platforms": [
+                "twitter"
+              ],
+              "account_ids": [
+                "Dnbr8LHr1Tf5k6fxvm0LkA=="
+              ],
+              "target_date": "",
+              "assignee": {
+                "id": "yq+sjYDTuZzouR7BOJQJyg==",
+                "name": "Steeve Roggers"
+              },
+              "labels": [],
+              "media": [],
+              "status": "open",
+              "client_approval": true,
+              "urgent": false,
+              "source": "team",
+              "schedule": {
+                "count": 0,
+                "first_at": null
+              },
+              "post_id": "",
+              "created_by": {
+                "id": "xoq0ngqGmzziNuvs4Dx/Xw==",
+                "name": "ABHINANDAN TIWARIIII"
+              },
+              "created_at": "2026-11-18 10:48:16",
+              "updated_at": "2026-11-18 11:26:34"
+            },
+            {
+              "id": "KPmw/kAsVszRiJEjtTfNgA==",
+              "kind": "post",
+              "workspace_id": "+r7DNyT6+A03N0MGkdFKfg==",
+              "column": "stage",
+              "stage_id": "I/uhCFdGvxrPxCb7Wf3BXg==",
+              "title": "doinewdjfnewjdewnjwenc",
+              "description": "Anuj Shukla\u00a0\u00a0[1:38 PM]\nNew post composer is live\n\nThe one-off post composer has a new look (ticket 1221, PR: https://github.com/dinwal/recurpost/pull/3563). It is merged and live on social.recurpost.com. A 4-minute walkthrough video is attached.\n\nWhat changed\n\u2022 Three panels: Where to post, the compose panel and How it looks, all on one screen.\n\u2022 Live previews: every picked network, in web or phone size. The same preview opens from Queue, History, Calendar and Library.\n\u2022 Clear errors: Post now checks every network first and lists what is missing in one popup.\n\u2022 Publish result dialog: after Post now or Schedule, it shows what happened profile by profile.\n\u2022 Send again: for Facebook profiles, groups and Instagram personal, the phone notification can be sent again from the result dialog, and from History > Social profile details.\n\u2022 No app on the phone: the result says \u201cInstall the app to post\u201d, with App Store and Google Play links.\n\u2022 Instagram DM automation: the composer now asks \u201cWhat triggers it?\u201d first: Specific keywords or Any comment. The same section is there when editing or retrying a post.\n\u2022 Closing with unsaved work: asks whether to Discard, Save as draft or Keep editing.\n\u2022 Also updated: X thread builder, library composers, Drafts and Kanban.\n\nNot in this release: DM automation for library posts. It will ship separately.\n\nPlease try it and reply in this thread if anything looks off.",
+              "platforms": [
+                "instagram",
+                "facebook",
+                "linkedin",
+                "twitter",
+                "google",
+                "pinterest",
+                "youtube",
+                "tiktok",
+                "threads",
+                "bluesky"
+              ],
+              "account_ids": [],
+              "target_date": "",
+              "assignee": {
+                "id": "xoq0ngqGmzziNuvs4Dx/Xw==",
+                "name": "ABHINANDAN TIWARIIII"
+              },
+              "labels": [],
+              "media": [
+                {
+                  "url": "https://media.recurpost.com/user_124411/videos/1795063123_6afe7d53648b7.mp4",
+                  "type": "video"
+                }
+              ],
+              "status": "open",
+              "client_approval": true,
+              "urgent": false,
+              "source": "team",
+              "schedule": {
+                "count": 0,
+                "first_at": null
+              },
+              "post_id": "",
+              "created_by": {
+                "id": "xoq0ngqGmzziNuvs4Dx/Xw==",
+                "name": "ABHINANDAN TIWARIIII"
+              },
+              "created_at": "2026-11-19 04:38:57",
+              "updated_at": "2026-11-19 04:39:06"
+            }
+          ]
+        },
+        {
+          "key": "stage-yCCKxH/nPBCCo7KAnXicng==",
+          "name": "Submitted",
+          "type": "review",
+          "stage_id": "yCCKxH/nPBCCo7KAnXicng==",
+          "color": "orange",
+          "cards": [
+            {
+              "id": "uRn0BhJ5ldw/zENDDE60JQ==",
+              "kind": "post",
+              "workspace_id": "+r7DNyT6+A03N0MGkdFKfg==",
+              "column": "stage",
+              "stage_id": "yCCKxH/nPBCCo7KAnXicng==",
+              "title": "post customization kanban",
+              "description": "post customization kanban",
+              "platforms": [
+                "facebook",
+                "twitter",
+                "instagram",
+                "threads"
+              ],
+              "account_ids": [
+                "FTT+1dYsZu9P+BozOBBWFg==",
+                "Dnbr8LHr1Tf5k6fxvm0LkA==",
+                "8hP223mImIBdzBI8UP0Bdg==",
+                "BaI77iSLlz+VXeXz1KcBHQ=="
+              ],
+              "target_date": "",
+              "assignee": {
+                "id": "xoq0ngqGmzziNuvs4Dx/Xw==",
+                "name": "ABHINANDAN TIWARIIII"
+              },
+              "labels": [],
+              "media": [],
+              "status": "open",
+              "client_approval": true,
+              "urgent": true,
+              "source": "team",
+              "schedule": {
+                "count": 0,
+                "first_at": null
+              },
+              "post_id": "",
+              "created_by": {
+                "id": "xoq0ngqGmzziNuvs4Dx/Xw==",
+                "name": "ABHINANDAN TIWARIIII"
+              },
+              "created_at": "2026-10-15 11:36:52",
+              "updated_at": "2026-10-21 10:12:05"
+            }
+          ]
+        },
+        {
+          "key": "stage-teK+AvoXUm5RAPPIiPoNOQ==",
+          "name": "Client Review",
+          "type": "client",
+          "stage_id": "teK+AvoXUm5RAPPIiPoNOQ==",
+          "color": "teal",
+          "cards": [
+            {
+              "id": "SDoSXZPxhmL9zTimLw56Rw==",
+              "kind": "post",
+              "workspace_id": "+r7DNyT6+A03N0MGkdFKfg==",
+              "column": "stage",
+              "stage_id": "teK+AvoXUm5RAPPIiPoNOQ==",
+              "title": "fefwfwfwfwfwfwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+              "description": "fefwfwfwfwfwfwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+              "platforms": [
+                "facebook",
+                "twitter",
+                "linkedin",
+                "instagram",
+                "pinterest",
+                "google",
+                "tiktok",
+                "youtube",
+                "threads",
+                "bluesky"
+              ],
+              "account_ids": [
+                "6N2Y9H+1wn0tcA9rckq0QQ==",
+                "Dnbr8LHr1Tf5k6fxvm0LkA==",
+                "qWX0y0kKlsLj4wCahQu+Pg==",
+                "IM+fuCV5RvlGrCn/uiuOHQ==",
+                "Qx0xR6A0eR9NsN05ko/wuQ==",
+                "5gTGCF4U9KTVmV1YOqQgsQ==",
+                "GGi9LPCXqXbOy8DpMJHeFg==",
+                "zbCQHrWdF482lp1QW8JZNw==",
+                "BaI77iSLlz+VXeXz1KcBHQ==",
+                "p1WvGPAbMR+22Tv9bX1VQg=="
+              ],
+              "target_date": "",
+              "assignee": {
+                "id": "xoq0ngqGmzziNuvs4Dx/Xw==",
+                "name": "ABHINANDAN TIWARIIII"
+              },
+              "labels": [],
+              "media": [
+                {
+                  "url": "https://media.recurpost.com/user_124411/images/1795063231_6afe7dbf059c9.png",
+                  "type": "image"
+                }
+              ],
+              "status": "awaiting_client",
+              "client_approval": true,
+              "urgent": false,
+              "source": "team",
+              "schedule": {
+                "count": 1,
+                "first_at": "2026-12-01 11:00:00"
+              },
+              "post_id": "",
+              "created_by": {
+                "id": "xoq0ngqGmzziNuvs4Dx/Xw==",
+                "name": "ABHINANDAN TIWARIIII"
+              },
+              "created_at": "2026-11-19 04:40:57",
+              "updated_at": "2026-11-19 04:42:40"
+            }
+          ]
+        },
+        {
+          "key": "scheduled",
+          "name": "Scheduled",
+          "type": "scheduled",
+          "stage_id": "",
+          "color": "",
+          "cards": [
+            {
+              "id": "+BTJGcroC0StrIvNPuhIiQ==",
+              "kind": "post",
+              "workspace_id": "+r7DNyT6+A03N0MGkdFKfg==",
+              "column": "scheduled",
+              "stage_id": "",
+              "title": "one-off scheduled post",
+              "description": "one-off scheduled post",
+              "platforms": [
+                "twitter"
+              ],
+              "account_ids": [
+                "Dnbr8LHr1Tf5k6fxvm0LkA=="
+              ],
+              "target_date": "",
+              "assignee": null,
+              "labels": [],
+              "media": [],
+              "status": "approved",
+              "client_approval": false,
+              "urgent": false,
+              "source": "team",
+              "schedule": {
+                "count": 0,
+                "first_at": null
+              },
+              "post_id": "",
+              "created_by": {
+                "id": "xoq0ngqGmzziNuvs4Dx/Xw==",
+                "name": "ABHINANDAN TIWARIIII"
+              },
+              "created_at": "2026-10-21 06:44:30",
+              "updated_at": ""
+            },
+            {
+              "id": "NdOdjg/7oE755P65660gOA==",
+              "kind": "post",
+              "workspace_id": "+r7DNyT6+A03N0MGkdFKfg==",
+              "column": "scheduled",
+              "stage_id": "",
+              "title": "schedule post in my workspace (workspace owner)",
+              "description": "schedule post in my workspace (workspace owner)",
+              "platforms": [
+                "bluesky"
+              ],
+              "account_ids": [
+                "p1WvGPAbMR+22Tv9bX1VQg=="
+              ],
+              "target_date": "",
+              "assignee": null,
+              "labels": [],
+              "media": [],
+              "status": "approved",
+              "client_approval": false,
+              "urgent": false,
+              "source": "team",
+              "schedule": {
+                "count": 1,
+                "first_at": "2026-11-27 16:00:00"
+              },
+              "post_id": "FlpNlJfJEFW5ScvTug1yfw==",
+              "created_by": {
+                "id": "xoq0ngqGmzziNuvs4Dx/Xw==",
+                "name": "ABHINANDAN TIWARIIII"
+              },
+              "created_at": "2026-11-26 10:03:30",
+              "updated_at": ""
+            }
+          ]
+        }
+      ],
+      "total_cards": 9,
+      "members": [
+        {
+          "id": "xoq0ngqGmzziNuvs4Dx/Xw==",
+          "name": "ABHINANDAN TIWARIIII",
+          "role": "Owner"
+        },
+        {
+          "id": "HOQM/kgyyhuAiTSaUjwD6w==",
+          "name": "claire bell",
+          "role": "Designeer"
+        },
+        {
+          "id": "yq+sjYDTuZzouR7BOJQJyg==",
+          "name": "Steeve Roggers",
+          "role": "Publisher"
+        },
+        {
+          "id": "o6qk22MMFOMFDUsiLqZcGw==",
+          "name": "abhinandan+00",
+          "role": "Writer"
+        },
+        {
+          "id": "DM8Q7wqKAxwKohD+QuNzUQ==",
+          "name": "Nouvel Espace",
+          "role": "Designeer"
+        }
+      ],
+      "settings": {
+        "ideas_enabled": true,
+        "client_approval_default": true,
+        "share_ideas_default": true,
+        "has_client_stage": true
+      },
+      "can_create": true
+    }
+  },
+  {
+    "id": "TC-WF-002",
+    "endpoint": "/api/workflow_board",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "writer lists workflow board",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "has_workflow": false,
+      "workspaces": [
+        {
+          "id": "muaEoP0ZCFF0bJFrAwhmMw==",
+          "name": "qa_workspace_trimmed",
+          "selected": true
+        },
+        {
+          "id": "FWKhi+gj/rhsV+de5kaGYA==",
+          "name": "qa_ws_qa_run_My Workspace",
+          "selected": true
+        }
+      ],
+      "columns": []
+    }
+  },
+  {
+    "id": "TC-WF-003",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "writer creates idea",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "TC-WF-004",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "empty title rejected",
+    "response": {
+      "status": 400,
+      "error": "title is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-WF-005",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "very long title rejected",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "TC-WF-006",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "SQL injection in title handled",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "TC-WF-007",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "unicode emoji in title",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "TC-WF-008",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "null title rejected",
+    "response": {
+      "status": 400,
+      "error": "title is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-WF-009",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "missing required fields",
+    "response": {
+      "status": 400,
+      "error": "title is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-WF-010",
+    "endpoint": "/api/workflow_idea_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "valid idea creation",
+    "response": {
+      "status": 400,
+      "error": "The Ideas stage is disabled in this workflow.",
+      "code": "request_failed"
+    }
+  },
+  {
+    "id": "RBAC-WF-001",
+    "endpoint": "/api/workflow_send_client",
+    "status": 404,
+    "expected": 403,
+    "pass": false,
+    "note": "writer cannot send to clients",
+    "response": {
+      "status": 404,
+      "error": "Unknown endpoint.",
+      "code": "endpoint_not_found"
+    }
+  },
+  {
+    "id": "RBAC-WF-002",
+    "endpoint": "/api/workflow_send_client",
+    "status": 404,
+    "expected": 200,
+    "pass": false,
+    "note": "publisher can send to clients",
+    "response": {
+      "status": 404,
+      "error": "Unknown endpoint.",
+      "code": "endpoint_not_found"
+    }
+  },
+  {
+    "id": "RBAC-WF-003",
+    "endpoint": "/api/workflow_urgent",
+    "status": 400,
+    "expected": 403,
+    "pass": false,
+    "note": "writer cannot toggle urgent",
+    "response": {
+      "status": 400,
+      "error": "card_id is not a valid id.",
+      "code": "invalid_id"
+    }
+  },
+  {
+    "id": "RBAC-WF-004",
+    "endpoint": "/api/workflow_urgent",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "owner can toggle urgent",
+    "response": {
+      "status": 400,
+      "error": "card_id is not a valid id.",
+      "code": "invalid_id"
+    }
+  }
+]

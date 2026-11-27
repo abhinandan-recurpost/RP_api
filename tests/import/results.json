@@ -1,0 +1,71 @@
+[
+  {
+    "id": "TC-IMP-001",
+    "endpoint": "/api/import_accounts",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "import accounts",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "accounts": [
+        {
+          "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+          "name": "Steffen Fitnes",
+          "network": "facebook",
+          "image": "https://graph.facebook.com/v25.0/1195617413635646/picture?type=large",
+          "last_fetched_at": "2026-08-25 06:00:10"
+        },
+        {
+          "id": "iL/UELNkkC3tFDqlJTRwxw==",
+          "name": "dl91",
+          "network": "linkedin",
+          "image": "",
+          "last_fetched_at": null
+        },
+        {
+          "id": "3/Ex5eRQYjU2UMGgZ+zt1w==",
+          "name": "steffen__heree",
+          "network": "instagram",
+          "image": "https://scontent-iad6-1.xx.fbcdn.net/v/t51.82787-15/747409578_18146339338492348_8742410897344208354_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7d201b&_nc_ohc=3Fy20NBDJf8Q7kNvwGb1q7j&_nc_oc=AdoTW0jEujlP7HMRE9w-V9LnpI0u4px0o8QIxOjak4r8poSqmgRJJ6L2snBgLpLzJAU4xhN5hYlTojClzcTAC9gv&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AL-3X8kEAAAA&_nc_gid=Qxn25eOf3Vtq09ZJXSjQnQ&oh=00_AQHKQGACgGhK-L-JIKI4cP_hEw8ENuEglyihjR2mgdsxpg&oe=6A91FAEB",
+          "last_fetched_at": "2026-08-25 17:11:52"
+        },
+        {
+          "id": "WbcSnzn45Q1drz+8XeNsJA==",
+          "name": "yapper",
+          "network": "pinterest",
+          "image": "https://s.pinimg.com/images/user/default_600.png",
+          "last_fetched_at": null
+        },
+        {
+          "id": "RMc910GxXVUdU6RAw0K5Fw==",
+          "name": "steffen__here",
+          "network": "threads",
+          "image": "https://scontent-iad6-1.cdninstagram.com/v/t51.82787-19/746983104_18144596494497140_1617907821006517369_n.jpg?stp=dst-jpg_s206x206_tt6&_nc_cat=107&ccb=7-5&_nc_sid=30ff31&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy5DMyJ9&_nc_ohc=D-nu0N6v5TMQ7kNvwHcFtM1&_nc_oc=AdomgFY8hcDAE6byovngpljGH7ej3o1o-qEwrAbA1eVcZYUw2Hf6_inpDd1_fqvnEvuhVWlC0ZpXmqEmCF_ZH6AR&_nc_zt=24&_nc_ht=scontent-iad6-1.cdninstagram.com&edm=AP4hL3IEAAAA&_nc_gid=VQZ3RGmE78nTcCXqFv8YCg&_nc_tpa=Q5bMBQJRNUvc5pjo_EYoSq1CrOC8_5hkITkpJaa8Phs83xvfPpbuLvvTPk2qXnv6xuw82D23vqKt107h&oh=00_AQEN3vuXvm3EQUntxiFiBXfQstarPfdSNxpPhZ6BXrEw2w&oe=6A808C",
+          "last_fetched_at": null
+        },
+        {
+          "id": "eGy28zCzs37vnGzM6d0DEw==",
+          "name": "mbapu.bsky.social",
+          "network": "bluesky",
+          "image": "https://cdn.bsky.app/img/avatar/plain/did:plc:quba26jpbspti77cpybukjgb/bafkreigmholtthcah6qpipsqaewahguj6lbeszdie6wenszlsr3v5nxu6y",
+          "last_fetched_at": null
+        }
+      ]
+    }
+  },
+  {
+    "id": "TC-IMP-002",
+    "endpoint": "/api/import_posts",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "import posts",
+    "response": {
+      "status": 400,
+      "error": "account_id is required.",
+      "code": "missing_param"
+    }
+  }
+]

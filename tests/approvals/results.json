@@ -1,0 +1,51 @@
+[
+  {
+    "id": "TC-APR-001",
+    "endpoint": "/api/approval_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "approval list",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "scope": "to_review",
+      "page": 1,
+      "per_page": 20,
+      "total": 0,
+      "counts": {
+        "to_review": 0,
+        "submitted": 0,
+        "rejected": 0,
+        "rejected_by_you": 0
+      },
+      "items": []
+    }
+  },
+  {
+    "id": "TC-APR-002",
+    "endpoint": "/api/approval_approve",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "approve valid",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-APR-003",
+    "endpoint": "/api/approval_reject",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "reject valid",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  }
+]

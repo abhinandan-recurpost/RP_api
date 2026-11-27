@@ -1,0 +1,41 @@
+[
+  {
+    "id": "TC-AG-001",
+    "endpoint": "/api/account_groups",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "account groups list",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "groups": []
+    }
+  },
+  {
+    "id": "TC-AG-002",
+    "endpoint": "/api/account_group_create",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "account group create",
+    "response": {
+      "status": 400,
+      "error": "name is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-AG-004",
+    "endpoint": "/api/account_group_delete",
+    "status": 400,
+    "expected": 200,
+    "pass": false,
+    "note": "account group delete",
+    "response": {
+      "status": 400,
+      "error": "id is required.",
+      "code": "missing_param"
+    }
+  }
+]

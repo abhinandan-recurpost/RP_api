@@ -1,0 +1,502 @@
+[
+  {
+    "id": "TC-ROLE-001",
+    "endpoint": "/api/roles",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "owner lists roles",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "roles": [
+        {
+          "id": "XeXCltC1KKdJAjPlxRYf7w==",
+          "name": "Editor",
+          "description": "Quality and strategy gatekeeper. Reviews and approves posts at internal stages, edits anyone's work, and manages the inbox.",
+          "template": "editor",
+          "is_template": true,
+          "members": 2
+        },
+        {
+          "id": "Rzw71HgCbmH2fP86AsL1rQ==",
+          "name": "Publisher",
+          "description": "Runs the full content workflow. Publishes and schedules posts, handles client approvals, exports reports, and manages the team.",
+          "template": "publisher",
+          "is_template": true,
+          "members": 1
+        },
+        {
+          "id": "ahjEMpGxfh7W4e1x6kHufA==",
+          "name": "Writer",
+          "description": "Core content creator. Writes and edits posts, manages the content library, and handles customer replies in the inbox.",
+          "template": "writer",
+          "is_template": true,
+          "members": 1
+        }
+      ],
+      "permission_keys": [
+        "create-posts",
+        "edit-others",
+        "delete-own",
+        "delete-others",
+        "approve",
+        "publish",
+        "social",
+        "connect-accounts",
+        "disconnect-accounts",
+        "manage-accounts",
+        "library",
+        "lib-upload",
+        "lib-manage",
+        "lib-delete",
+        "inbox",
+        "inbox-reply",
+        "inbox-assign",
+        "reports",
+        "reports-export",
+        "dm",
+        "dm-create",
+        "dm-edit",
+        "ads",
+        "ads-create",
+        "client",
+        "send-client",
+        "approve-on-behalf",
+        "workspace-settings",
+        "invite",
+        "remove-members"
+      ],
+      "notification_keys": [
+        "assigned",
+        "review",
+        "approved",
+        "changes",
+        "sla",
+        "client",
+        "urgent",
+        "pub-ok",
+        "pub-fail",
+        "reconnect",
+        "paused-queue",
+        "daily-sched",
+        "daily-sched-empty",
+        "post-summary",
+        "weekly",
+        "inbox-summary",
+        "digest",
+        "product-news"
+      ]
+    }
+  },
+  {
+    "id": "TC-ROLE-002",
+    "endpoint": "/api/roles",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "member lists roles",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "roles": [
+        {
+          "id": "tIHydnRNoPiIl9Pj47XS3Q==",
+          "name": "Contributor",
+          "description": "Submits drafts for review. Writes their own posts, adds media, and sends for review. No access to others' work, approvals, or publishing.",
+          "template": "contributor",
+          "is_template": true,
+          "members": 0
+        },
+        {
+          "id": "iskZYpeTpPIau9rouMAaUQ==",
+          "name": "Editor",
+          "description": "Quality and strategy gatekeeper. Reviews and approves posts at internal stages, edits anyone's work, and manages the inbox.",
+          "template": "editor",
+          "is_template": true,
+          "members": 0
+        },
+        {
+          "id": "Hx+fHKgXnVK3ETwCNxRgtw==",
+          "name": "Escalation Role",
+          "description": "Core content creator. Writes and edits posts, manages the content library, and handles customer replies in the inbox.",
+          "template": "writer",
+          "is_template": true,
+          "members": 0
+        },
+        {
+          "id": "2h7l2QiXgNaPjiZZEkNStg==",
+          "name": "Escalation Role3",
+          "description": "Core content creator. Writes and edits posts, manages the content library, and handles customer replies in the inbox.",
+          "template": "writer",
+          "is_template": true,
+          "members": 0
+        },
+        {
+          "id": "XqdhbL1XGr5uMzLIu+zBLA==",
+          "name": "Publisher",
+          "description": "Runs the full content workflow. Publishes and schedules posts, handles client approvals, exports reports, and manages the team.",
+          "template": "publisher",
+          "is_template": true,
+          "members": 0
+        },
+        {
+          "id": "0dAWs3mszCmXgY/R5rp8NQ==",
+          "name": "Super Writer",
+          "description": "Core content creator. Writes and edits posts, manages the content library, and handles customer replies in the inbox.",
+          "template": "writer",
+          "is_template": true,
+          "members": 0
+        },
+        {
+          "id": "xAfkJY9++ABVTwE17DE14A==",
+          "name": "TestRole",
+          "description": "Core content creator. Writes and edits posts, manages the content library, and handles customer replies in the inbox.",
+          "template": "writer",
+          "is_template": true,
+          "members": 0
+        },
+        {
+          "id": "QN23Pn4nqCfjo9hhtBD8ow==",
+          "name": "Writer",
+          "description": "Core content creator. Writes and edits posts, manages the content library, and handles customer replies in the inbox.",
+          "template": "writer",
+          "is_template": true,
+          "members": 0
+        }
+      ],
+      "permission_keys": [
+        "create-posts",
+        "edit-others",
+        "delete-own",
+        "delete-others",
+        "approve",
+        "publish",
+        "social",
+        "connect-accounts",
+        "disconnect-accounts",
+        "manage-accounts",
+        "library",
+        "lib-upload",
+        "lib-manage",
+        "lib-delete",
+        "inbox",
+        "inbox-reply",
+        "inbox-assign",
+        "reports",
+        "reports-export",
+        "dm",
+        "dm-create",
+        "dm-edit",
+        "ads",
+        "ads-create",
+        "client",
+        "send-client",
+        "approve-on-behalf",
+        "workspace-settings",
+        "invite",
+        "remove-members"
+      ],
+      "notification_keys": [
+        "assigned",
+        "review",
+        "approved",
+        "changes",
+        "sla",
+        "client",
+        "urgent",
+        "pub-ok",
+        "pub-fail",
+        "reconnect",
+        "paused-queue",
+        "daily-sched",
+        "daily-sched-empty",
+        "post-summary",
+        "weekly",
+        "inbox-summary",
+        "digest",
+        "product-news"
+      ]
+    }
+  },
+  {
+    "id": "TC-ROLE-003",
+    "endpoint": "/api/role_permissions",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "role permissions valid",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "groups": [
+        {
+          "key": "posts",
+          "label": "Posts",
+          "description": "Writing and editing posts",
+          "master_key": "",
+          "permissions": [
+            {
+              "key": "create-posts",
+              "label": "Write and edit their posts",
+              "description": "Create new posts, add media, and edit any post assigned to them"
+            },
+            {
+              "key": "edit-others",
+              "label": "Edit others' post",
+              "description": "Edit any post, whoever it is assigned to - even in Client Review or Scheduled"
+            },
+            {
+              "key": "delete-own",
+              "label": "Delete own posts",
+              "description": "Permanently delete posts they created themselves"
+            },
+            {
+              "key": "delete-others",
+              "label": "Delete others' posts",
+              "description": "Permanently delete posts created by anyone on the team"
+            }
+          ]
+        },
+        {
+          "key": "approvals",
+          "label": "Approvals & publishing",
+          "description": "Reviewing posts and sending them live",
+          "master_key": "",
+          "permissions": [
+            {
+              "key": "approve",
+              "label": "Approve / reject",
+              "description": "Approve a post or send it back with changes. Needs a review stage in your workflow."
+            },
+            {
+              "key": "publish",
+              "label": "Publish or schedule",
+              "description": "Publish now, and set or change any post's schedule at any stage"
+            }
+          ]
+        },
+        {
+          "key": "social",
+          "label": "Social profiles",
+          "description": "Managing social accounts. Off hides this page from their sidebar.",
+          "master_key": "social",
+          "permissions": [
+            {
+              "key": "connect-accounts",
+              "label": "Add a social account",
+              "description": "Authorize and connect new social profiles to workspaces they have access to"
+            },
+            {
+              "key": "disconnect-accounts",
+              "label": "Delete a social account",
+              "description": "Remove a connected profile from workspaces they have access to"
+            },
+            {
+              "key": "manage-accounts",
+              "label": "Edit social account settings",
+              "description": "Edit settings like time zone, watermark, display name, and posting defaults"
+            }
+          ]
+        },
+        {
+          "key": "library",
+          "label": "Content library",
+          "description": "Saved media and posting schedules. Off hides this page from their sidebar.",
+          "master_key": "library",
+          "permissions": [
+            {
+              "key": "lib-upload",
+              "label": "Manage content",
+              "description": "Allows the user to add, edit, and manage content in the Library."
+            },
+            {
+              "key": "lib-manage",
+              "label": "Manage timeslots",
+              "description": "Create, edit or delete timeslots from a library"
+            },
+            {
+              "key": "lib-delete",
+              "label": "Delete content",
+              "description": "Permanently remove media and saved items from the library"
+            }
+          ]
+        },
+        {
+          "key": "inbox",
+          "label": "Inbox",
+          "description": "Comments and direct messages. Off hides this page from their sidebar.",
+          "master_key": "inbox",
+          "permissions": [
+            {
+              "key": "inbox-reply",
+              "label": "Reply to DMs & comments",
+              "description": "Reply from the unified inbox. Without this, it stays read-only."
+            },
+            {
+              "key": "inbox-assign",
+              "label": "Assign messages",
+              "description": "Assign conversations to teammates and mark them done"
+            }
+          ]
+        },
+        {
+          "key": "reports",
+          "label": "Reports & analytics",
+          "description": "Performance reports and analytics. Off hides this page from their sidebar.",
+          "master_key": "reports",
+          "permissions": [
+            {
+              "key": "reports-export",
+              "label": "Export & share reports",
+              "description": "Download reports as PDF or send them directly via email to clients"
+            }
+          ]
+        },
+        {
+          "key": "dm",
+          "label": "DM automations",
+          "description": "Automated replies and DM flows. Off hides this page from their sidebar.",
+          "master_key": "dm",
+          "permissions": [
+            {
+              "key": "dm-create",
+              "label": "Create an automation",
+              "description": "Build new DM automations, triggers, and auto-reply flows"
+            },
+            {
+              "key": "dm-edit",
+              "label": "Edit / delete automation",
+              "description": "Edit or permanently delete existing DM automations"
+            }
+          ]
+        },
+        {
+          "key": "ads",
+          "label": "Paid ads",
+          "description": "Paid ad campaigns. Off hides this page from their sidebar.",
+          "master_key": "ads",
+          "permissions": [
+            {
+              "key": "ads-create",
+              "label": "Boost a post",
+              "description": "Boost an existing published post as a paid promotion from connected ad accounts"
+            }
+          ]
+        },
+        {
+          "key": "client",
+          "label": "Client review",
+          "description": "Sharing posts with clients for sign-off before they go live. Needs a client review stage in your workflow.",
+          "master_key": "client",
+          "permissions": [
+            {
+              "key": "send-client",
+              "label": "Send posts to clients",
+              "description": "Share posts on the client calendar for approval, urgent ones too"
+            },
+            {
+              "key": "approve-on-behalf",
+              "label": "Approve for the client",
+              "description": "Approve on the client's behalf when they haven't responded - always logged"
+            }
+          ]
+        },
+        {
+          "key": "workspace-team",
+          "label": "Workspace & team",
+          "description": "Workspace setup and managing people",
+          "master_key": "",
+          "permissions": [
+            {
+              "key": "workspace-settings",
+              "label": "Workspace settings",
+              "description": "Edit settings of workspaces they have access to - name, social profiles, watermark, etc."
+            },
+            {
+              "key": "invite",
+              "label": "Invite members",
+              "description": "Invite people to workspaces they have access to and assign them a role"
+            },
+            {
+              "key": "remove-members",
+              "label": "Remove members",
+              "description": "Remove people from workspaces they have access to"
+            }
+          ]
+        }
+      ],
+      "permission_keys": [
+        "create-posts",
+        "edit-others",
+        "delete-own",
+        "delete-others",
+        "approve",
+        "publish",
+        "social",
+        "connect-accounts",
+        "disconnect-accounts",
+        "manage-accounts",
+        "library",
+        "lib-upload",
+        "lib-manage",
+        "lib-delete",
+        "inbox",
+        "inbox-reply",
+        "inbox-assign",
+        "reports",
+        "reports-export",
+        "dm",
+        "dm-create",
+        "dm-edit",
+        "ads",
+        "ads-create",
+        "client",
+        "send-client",
+        "approve-on-behalf",
+        "workspace-settings",
+        "invite",
+        "remove-members"
+      ]
+    }
+  },
+  {
+    "id": "TC-ROLE-005",
+    "endpoint": "/api/role_create",
+    "status": 409,
+    "expected": 200,
+    "pass": false,
+    "note": "non-owner creates role",
+    "response": {
+      "status": 409,
+      "error": "A role named \"TestRole\" already exists.",
+      "code": "conflict"
+    }
+  },
+  {
+    "id": "TC-ROLE-012",
+    "endpoint": "/api/role_set_permissions",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "invalid format array",
+    "response": {
+      "status": 400,
+      "error": "role_id is required.",
+      "code": "missing_param"
+    }
+  },
+  {
+    "id": "TC-ROLE-013",
+    "endpoint": "/api/role_set_permissions",
+    "status": 400,
+    "expected": 403,
+    "pass": false,
+    "note": "non-owner escalates permissions",
+    "response": {
+      "status": 400,
+      "error": "role_id is required.",
+      "code": "missing_param"
+    }
+  }
+]

@@ -1,0 +1,410 @@
+[
+  {
+    "id": "TC-WS-001",
+    "endpoint": "/api/workspace_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "owner lists workspaces",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "workspace_list": [
+        {
+          "ws_id": "MlWlT6qeem2MMkIW8mWYmg==",
+          "ws_name": "My Workspace",
+          "is_default": 1,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "mnCkYKT+a8wM51bBC/lOzg==",
+          "ws_name": "API Caller test",
+          "is_default": 0,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "/TJ36aWo/78goCOY6n0gOQ==",
+          "ws_name": "Faces",
+          "is_default": 0,
+          "ownership": "own",
+          "owner_paused": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "TC-WS-002",
+    "endpoint": "/api/workspace_list",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "member lists workspaces",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "workspace_list": [
+        {
+          "ws_id": "dZ6meoYqRtXI7AshZFlAkw==",
+          "ws_name": "My Workspace",
+          "is_default": 1,
+          "ownership": "own",
+          "owner_paused": 0
+        },
+        {
+          "ws_id": "mnCkYKT+a8wM51bBC/lOzg==",
+          "ws_name": "API Caller test",
+          "is_default": 0,
+          "ownership": "shared",
+          "owner_paused": 0
+        }
+      ]
+    }
+  },
+  {
+    "id": "TC-WS-003",
+    "endpoint": "/api/workspace_details",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "valid workspace details",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "workspace": {
+        "id": "MlWlT6qeem2MMkIW8mWYmg==",
+        "name": "My Workspace",
+        "is_default": true,
+        "is_owner": true,
+        "owner": {
+          "id": "yFwdgp/x4CeZtH1oue1CLw==",
+          "name": "Abhinandan Tiwari",
+          "email": "abhinandan@recurrpost.com"
+        },
+        "timezone": "asia/kolkata",
+        "workspace_manager": null,
+        "client_email": "",
+        "show_own_posts": false,
+        "created_at": "2026-08-07 05:28:21"
+      },
+      "libraries": [
+        {
+          "id": "QTO6SY15Ki9Heoqn3otNRQ==",
+          "name": "faces",
+          "color": "#10b981"
+        },
+        {
+          "id": "N8OYuJasZHVVT073V8kT8w==",
+          "name": "Recurring Library",
+          "color": "#10b981"
+        },
+        {
+          "id": "fo+B6sGztjZQ6MC/M4zxgA==",
+          "name": "Testing Video",
+          "color": "#f59e0b"
+        },
+        {
+          "id": "CiSQYpwzyP5hOmrj784AsQ==",
+          "name": "PR3627 Fix Verify",
+          "color": "#f59e0b"
+        },
+        {
+          "id": "V1Frd8ABtM2D+Chwc5iQnA==",
+          "name": "bsky posting",
+          "color": "#10b981"
+        },
+        {
+          "id": "4MeU+c1VYwluOdv/YFuXTg==",
+          "name": "Test Library",
+          "color": "#e0e0e0"
+        }
+      ],
+      "accounts": [
+        {
+          "id": "hg6bSe7ZXxKXOiiSE83AQw==",
+          "name": "Abhinandan Tiwari",
+          "network": "twitter",
+          "status": "active"
+        },
+        {
+          "id": "0uOo2WQvrGnDbDGBuT7nFA==",
+          "name": "Steffen Fitnes",
+          "network": "facebook",
+          "status": "active"
+        },
+        {
+          "id": "iL/UELNkkC3tFDqlJTRwxw==",
+          "name": "dl91",
+          "network": "linkedin",
+          "status": "active"
+        },
+        {
+          "id": "Zx+/8rcGyhQ6gLuUczqkAA==",
+          "name": "Steeve Roggers",
+          "network": "youtube",
+          "status": "active"
+        },
+        {
+          "id": "RMc910GxXVUdU6RAw0K5Fw==",
+          "name": "steffen__here",
+          "network": "threads",
+          "status": "active"
+        },
+        {
+          "id": "eGy28zCzs37vnGzM6d0DEw==",
+          "name": "mbapu.bsky.social",
+          "network": "bluesky",
+          "status": "active"
+        },
+        {
+          "id": "3/Ex5eRQYjU2UMGgZ+zt1w==",
+          "name": "steffen__heree",
+          "network": "instagram",
+          "status": "active"
+        },
+        {
+          "id": "jA7Q1yF07HwlvJuo5xgkTg==",
+          "name": "steeve23fg",
+          "network": "tiktok",
+          "status": "active"
+        },
+        {
+          "id": "zaSAXjAaiJuJLJMkxFogKg==",
+          "name": "weir.dshakshi/",
+          "network": "instagram",
+          "status": "active"
+        },
+        {
+          "id": "uR7goHC/+p/MZ0W8WS8QsA==",
+          "name": "Steffen John",
+          "network": "facebook",
+          "status": "active"
+        },
+        {
+          "id": "EvXDdEB8AgADUkOOvAwKIg==",
+          "name": "Steeve Roggers",
+          "network": "linkedin",
+          "status": "active"
+        },
+        {
+          "id": "WbcSnzn45Q1drz+8XeNsJA==",
+          "name": "yapper",
+          "network": "pinterest",
+          "status": "active"
+        }
+      ],
+      "members": [],
+      "pending_invites": [],
+      "roles": [
+        {
+          "id": "XeXCltC1KKdJAjPlxRYf7w==",
+          "name": "Editor",
+          "description": "Quality and strategy gatekeeper. Reviews and approves posts at internal stages, edits anyone's work, and manages the inbox.",
+          "members": 2
+        },
+        {
+          "id": "Rzw71HgCbmH2fP86AsL1rQ==",
+          "name": "Publisher",
+          "description": "Runs the full content workflow. Publishes and schedules posts, handles client approvals, exports reports, and manages the team.",
+          "members": 1
+        },
+        {
+          "id": "ahjEMpGxfh7W4e1x6kHufA==",
+          "name": "Writer",
+          "description": "Core content creator. Writes and edits posts, manages the content library, and handles customer replies in the inbox.",
+          "members": 1
+        }
+      ],
+      "client_report_emails": []
+    }
+  },
+  {
+    "id": "TC-WS-004",
+    "endpoint": "/api/workspace_details",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "invalid workspace id",
+    "response": {
+      "status": 400,
+      "error": "workspace_id is not a valid id. Get ids from /api/workspace_list.",
+      "code": "invalid_id"
+    }
+  },
+  {
+    "id": "TC-WS-005",
+    "endpoint": "/api/workspace_details",
+    "status": 404,
+    "expected": 404,
+    "pass": true,
+    "note": "cross-user workspace details",
+    "response": {
+      "status": 404,
+      "error": "Workspace not found or you do not have access to it.",
+      "code": "workspace_not_found"
+    }
+  },
+  {
+    "id": "TC-WS-009",
+    "endpoint": "/api/workspace_update",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "owner updates workspace",
+    "response": {
+      "status": 200,
+      "message": "Workspace updated",
+      "workspace": {
+        "id": "MlWlT6qeem2MMkIW8mWYmg==",
+        "name": "My Workspace",
+        "client_email": "",
+        "show_own_posts": false,
+        "is_default": true
+      }
+    }
+  },
+  {
+    "id": "TC-WS-010",
+    "endpoint": "/api/workspace_update",
+    "status": 403,
+    "expected": 403,
+    "pass": true,
+    "note": "non-owner updates workspace",
+    "response": {
+      "status": 403,
+      "error": "Your role in this workspace does not allow this action (Workspace settings).",
+      "code": "permission_denied",
+      "permission": "workspace-settings"
+    }
+  },
+  {
+    "id": "TC-WS-013",
+    "endpoint": "/api/workspace_clone",
+    "status": 403,
+    "expected": 403,
+    "pass": true,
+    "note": "non-owner clones workspace",
+    "response": {
+      "status": 403,
+      "error": "Only the workspace owner can do this.",
+      "code": "permission_denied"
+    }
+  },
+  {
+    "id": "TC-WS-015",
+    "endpoint": "/api/workspace_delete",
+    "status": 400,
+    "expected": 400,
+    "pass": true,
+    "note": "owner delete without confirm",
+    "response": {
+      "status": 400,
+      "error": "Send confirm=true to delete the workspace; its libraries and social accounts are unlinked, not deleted.",
+      "code": "confirm_required"
+    }
+  },
+  {
+    "id": "TC-WS-016",
+    "endpoint": "/api/workspace_delete",
+    "status": 403,
+    "expected": 403,
+    "pass": true,
+    "note": "non-owner deletes workspace",
+    "response": {
+      "status": 403,
+      "error": "Only the workspace owner can do this.",
+      "code": "permission_denied"
+    }
+  },
+  {
+    "id": "TC-WS-017",
+    "endpoint": "/api/workspace_members",
+    "status": 200,
+    "expected": 200,
+    "pass": true,
+    "note": "owner lists members",
+    "response": {
+      "status": 200,
+      "message": "Success",
+      "workspace_id": "mnCkYKT+a8wM51bBC/lOzg==",
+      "members": [
+        {
+          "id": "dGODSaojqRC1C/1oY/ZZsg==",
+          "name": "abhinandan+00",
+          "email": "abhinandan+00@recurrpost.com",
+          "role": {
+            "id": "Rzw71HgCbmH2fP86AsL1rQ==",
+            "name": "Publisher"
+          },
+          "status": "active",
+          "is_workspace_manager": false
+        },
+        {
+          "id": "JgUK0KNiADvqHtYCKo+glw==",
+          "name": "abhi chan",
+          "email": "abhinandan+abhi@recurrpost.com",
+          "role": {
+            "id": "XeXCltC1KKdJAjPlxRYf7w==",
+            "name": "Editor"
+          },
+          "status": "active",
+          "is_workspace_manager": false
+        },
+        {
+          "id": "l+T81bFEu76Usgt05cLD1Q==",
+          "name": "steeve vanz",
+          "email": "abhinandan+steeve@recurrpost.com",
+          "role": {
+            "id": "ahjEMpGxfh7W4e1x6kHufA==",
+            "name": "Writer"
+          },
+          "status": "active",
+          "is_workspace_manager": false
+        }
+      ],
+      "pending_invites": [],
+      "approvers": []
+    }
+  },
+  {
+    "id": "TC-WS-018",
+    "endpoint": "/api/workspace_members",
+    "status": 404,
+    "expected": 404,
+    "pass": true,
+    "note": "non-member lists members",
+    "response": {
+      "status": 404,
+      "error": "Workspace not found or you do not have access to it.",
+      "code": "workspace_not_found"
+    }
+  },
+  {
+    "id": "TC-WS-023",
+    "endpoint": "/api/workspace_member_update",
+    "status": 403,
+    "expected": 403,
+    "pass": true,
+    "note": "non-owner updates member role",
+    "response": {
+      "status": 403,
+      "error": "Only the workspace owner or its Workspace Manager can do this.",
+      "code": "permission_denied"
+    }
+  },
+  {
+    "id": "TC-WS-025",
+    "endpoint": "/api/workspace_member_remove",
+    "status": 403,
+    "expected": 403,
+    "pass": true,
+    "note": "non-owner removes member",
+    "response": {
+      "status": 403,
+      "error": "Your role in this workspace does not allow this action (Remove members).",
+      "code": "permission_denied",
+      "permission": "remove-members"
+    }
+  }
+]
